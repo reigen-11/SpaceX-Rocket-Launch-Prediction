@@ -200,7 +200,7 @@ latex_documents = [
 # If true, show page references after internal links.
 # latex_show_pagerefs = False
 
-# If true, show URL addresses after external links.
+# If true, show URL addresses after transformed links.
 # latex_show_urls = False
 
 # Documents to append as an appendix to all manuals.
@@ -219,7 +219,7 @@ man_pages = [
      [u"Aditya Durugkar"], 1)
 ]
 
-# If true, show URL addresses after external links.
+# If true, show URL addresses after transformed links.
 # man_show_urls = False
 
 
