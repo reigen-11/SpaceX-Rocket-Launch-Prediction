@@ -4,8 +4,8 @@ import pandas as pd
 from dataclasses import dataclass
 from src.utils.logger import logging
 from src.utils.exception import CustomExceptions
-from src.config.data_preprocessing import preprocess_data
-from src.data.api import preprocessed_data_dir, raw_data_csv
+from src.utils.data_preprocessing import preprocess_data
+from src.api import preprocessed_data_dir, raw_data_csv
 
 
 @dataclass
@@ -25,7 +25,6 @@ class DataIngestion:
             logging.info('Reading the dataset as dataframe')
 
             df = preprocess_data(df)
-            os.makedirs(os.path.dirname(self.ingestion_config.data_path), exist_ok=True)
             df.to_csv(self.ingestion_config.data_path, index=False, header=True)
             logging.info("Data Ingestion Completed")
 
