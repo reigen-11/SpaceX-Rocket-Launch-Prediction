@@ -1,4 +1,5 @@
 .
+├── app1.py
 ├── app.py
 ├── artifacts
 │   ├── data
@@ -9,87 +10,75 @@
 │   │   └── transformed
 │   │       └── transformed_df.csv
 │   └── data_encoding_object.pkl
-├── booster.gif
-├── classification_reports.json
 ├── directory_structure.txt
 ├── Dockerfile
-├── docs
-│   ├── commands.rst
-│   ├── conf.py
-│   ├── getting-started.rst
-│   ├── index.rst
-│   ├── make.bat
-│   └── Makefile
 ├── LICENSE
 ├── logs
-├── main.py
+│   ├── 12_13_2023_15_57_19.log
+│   │   └── 12_13_2023_15_57_19.log
+│   ├── 12_13_2023_17_57_23.log
+│   │   └── 12_13_2023_17_57_23.log
+│   ├── 12_13_2023_17_57_24.log
+│   ├── 12_13_2023_18_01_02.log
+│   │   └── 12_13_2023_18_01_02.log
+│   ├── 12_13_2023_18_01_03.log
+│   ├── 12_13_2023_18_01_53.log
+│   │   └── 12_13_2023_18_01_53.log
+│   ├── 12_13_2023_18_02_27.log
+│   │   └── 12_13_2023_18_02_27.log
+│   ├── 12_13_2023_18_05_27.log
+│   │   └── 12_13_2023_18_05_27.log
+│   ├── 12_13_2023_18_06_13.log
+│   │   └── 12_13_2023_18_06_13.log
+│   ├── 12_13_2023_18_06_38.log
+│   │   └── 12_13_2023_18_06_38.log
+│   ├── 12_13_2023_18_08_29.log
+│   │   └── 12_13_2023_18_08_29.log
+│   ├── 12_14_2023_17_42_26.log
+│   │   └── 12_14_2023_17_42_26.log
+│   ├── 12_14_2023_17_42_36.log
+│   │   └── 12_14_2023_17_42_36.log
+│   ├── 12_14_2023_17_44_11.log
+│   │   └── 12_14_2023_17_44_11.log
+│   ├── 12_14_2023_18_44_28.log
+│   │   └── 12_14_2023_18_44_28.log
+│   ├── 12_15_2023_10_56_26.log
+│   │   └── 12_15_2023_10_56_26.log
+│   ├── 12_15_2023_10_56_51.log
+│   │   └── 12_15_2023_10_56_51.log
+│   └── 12_15_2023_10_57_21.log
+│       └── 12_15_2023_10_57_21.log
 ├── Makefile
-├── md
 ├── models
+│   ├── tuned_params.json
 │   └── xgb_model.pkl
 ├── notebooks
-│   └── feature_selection.ipynb
+│   └── README.md
+├── __pycache__
+│   ├── app1.cpython-311.pyc
+│   └── app.cpython-311.pyc
 ├── README.md
 ├── reports
-│   └── figures
+│   └── classification_reports.json
 ├── requirements.txt
-├── setup.py
 ├── src
-│   ├── config
-│   │   ├── data_preprocessing.py
-│   │   ├── data_transformation.py
-│   │   ├── __init__.py
-│   │   └── __pycache__
-│   │       ├── data_preprocessing.cpython-311.pyc
-│   │       ├── data_transformation.cpython-311.pyc
-│   │       └── __init__.cpython-311.pyc
-│   ├── data
-│   │   ├── api.py
-│   │   ├── fetch_data.py
-│   │   ├── __init__.py
-│   │   ├── main.py
-│   │   ├── process_data.py
-│   │   └── __pycache__
-│   │       ├── api.cpython-311.pyc
-│   │       └── __init__.cpython-311.pyc
+│   ├── api.py
+│   ├── Data_cleaning.py
+│   ├── Data_transformation.py
+│   ├── Data_wrangling.py
+│   ├── exception.py
+│   ├── Hyperparameter_Tuning.py
 │   ├── __init__.py
-│   ├── models
-│   │   ├── classification_reports.json
-│   │   ├── hyperparam_tuning.py
-│   │   ├── __init__.py
-│   │   ├── __pycache__
-│   │   │   ├── hyperparam_tuning.cpython-311.pyc
-│   │   │   ├── __init__.cpython-311.pyc
-│   │   │   └── train_model.cpython-311.pyc
-│   │   ├── train_model.py
-│   │   └── tuned_hyperparams.json
-│   ├── Preprocessing
-│   │   ├── data_ingestion.py
-│   │   ├── data_transformation.py
-│   │   ├── __init__.py
-│   │   └── __pycache__
-│   │       ├── data_ingestion.cpython-311.pyc
-│   │       ├── data_transformation.cpython-311.pyc
-│   │       └── __init__.cpython-311.pyc
-│   ├── __pycache__
-│   │   ├── __init__.cpython-311.pyc
-│   │   └── __init__.cpython-39.pyc
-│   ├── utils
-│   │   ├── exception.py
-│   │   ├── __init__.py
-│   │   ├── logger.py
-│   │   └── __pycache__
-│   │       ├── exception.cpython-311.pyc
-│   │       ├── exception.cpython-39.pyc
-│   │       ├── __init__.cpython-311.pyc
-│   │       ├── __init__.cpython-39.pyc
-│   │       ├── logger.cpython-311.pyc
-│   │       └── logger.cpython-39.pyc
-│   └── visualization
-│       ├── __init__.py
-│       └── visualize.py
-├── test_environment.py
-├── tox.ini
+│   ├── logger.py
+│   └── Train_model.py
+├── static
+│   ├── falcon9.jpg
+│   ├── index.css
+│   └── result.css
+├── templates
+│   ├── booster.gif
+│   ├── index.html
+│   └── result.html
 └── venv
     ├── bin
     │   ├── activate
@@ -102,6 +91,10 @@
     │   ├── databricks
     │   ├── dbfs
     │   ├── deactivate.nu
+    │   ├── doesitcache
+    │   ├── dul-receive-pack
+    │   ├── dul-upload-pack
+    │   ├── dulwich
     │   ├── f2py
     │   ├── flask
     │   ├── fonttools
@@ -129,6 +122,7 @@
     │   ├── jupyter-server
     │   ├── jupyter-troubleshoot
     │   ├── jupyter-trust
+    │   ├── keyring
     │   ├── mako-render
     │   ├── markdown-it
     │   ├── markdown_py
@@ -141,11 +135,14 @@
     │   ├── pipenv
     │   ├── pipenv-resolver
     │   ├── pipreqs
+    │   ├── pkginfo
+    │   ├── poetry
     │   ├── pybabel
     │   ├── pyftmerge
     │   ├── pyftsubset
     │   ├── pygmentize
     │   ├── pyjson5
+    │   ├── pyproject-build
     │   ├── python -> /usr/bin/python3.11
     │   ├── python3 -> python
     │   ├── python3.11 -> python
@@ -1845,6 +1842,66 @@
     │           │       ├── test_soup.py
     │           │       ├── test_tag.py
     │           │       └── test_tree.py
+    │           ├── build
+    │           │   ├── env.py
+    │           │   ├── _exceptions.py
+    │           │   ├── _importlib.py
+    │           │   ├── __init__.py
+    │           │   ├── __main__.py
+    │           │   ├── __pycache__
+    │           │   │   ├── env.cpython-311.pyc
+    │           │   │   ├── _exceptions.cpython-311.pyc
+    │           │   │   ├── _importlib.cpython-311.pyc
+    │           │   │   ├── __init__.cpython-311.pyc
+    │           │   │   ├── __main__.cpython-311.pyc
+    │           │   │   ├── _util.cpython-311.pyc
+    │           │   │   └── util.cpython-311.pyc
+    │           │   ├── py.typed
+    │           │   ├── _util.py
+    │           │   └── util.py
+    │           ├── build-1.0.3.dist-info
+    │           │   ├── entry_points.txt
+    │           │   ├── INSTALLER
+    │           │   ├── LICENSE
+    │           │   ├── METADATA
+    │           │   ├── RECORD
+    │           │   └── WHEEL
+    │           ├── cachecontrol
+    │           │   ├── adapter.py
+    │           │   ├── cache.py
+    │           │   ├── caches
+    │           │   │   ├── file_cache.py
+    │           │   │   ├── __init__.py
+    │           │   │   ├── __pycache__
+    │           │   │   │   ├── file_cache.cpython-311.pyc
+    │           │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   └── redis_cache.cpython-311.pyc
+    │           │   │   └── redis_cache.py
+    │           │   ├── _cmd.py
+    │           │   ├── controller.py
+    │           │   ├── filewrapper.py
+    │           │   ├── heuristics.py
+    │           │   ├── __init__.py
+    │           │   ├── __pycache__
+    │           │   │   ├── adapter.cpython-311.pyc
+    │           │   │   ├── cache.cpython-311.pyc
+    │           │   │   ├── _cmd.cpython-311.pyc
+    │           │   │   ├── controller.cpython-311.pyc
+    │           │   │   ├── filewrapper.cpython-311.pyc
+    │           │   │   ├── heuristics.cpython-311.pyc
+    │           │   │   ├── __init__.cpython-311.pyc
+    │           │   │   ├── serialize.cpython-311.pyc
+    │           │   │   └── wrapper.cpython-311.pyc
+    │           │   ├── py.typed
+    │           │   ├── serialize.py
+    │           │   └── wrapper.py
+    │           ├── cachecontrol-0.13.1.dist-info
+    │           │   ├── entry_points.txt
+    │           │   ├── INSTALLER
+    │           │   ├── LICENSE.txt
+    │           │   ├── METADATA
+    │           │   ├── RECORD
+    │           │   └── WHEEL
     │           ├── cachetools
     │           │   ├── func.py
     │           │   ├── __init__.py
@@ -1966,6 +2023,183 @@
     │           │   ├── METADATA
     │           │   ├── RECORD
     │           │   ├── top_level.txt
+    │           │   └── WHEEL
+    │           ├── cleo
+    │           │   ├── application.py
+    │           │   ├── color.py
+    │           │   ├── commands
+    │           │   │   ├── base_command.py
+    │           │   │   ├── command.py
+    │           │   │   ├── completions
+    │           │   │   │   ├── __init__.py
+    │           │   │   │   ├── __pycache__
+    │           │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   └── templates.cpython-311.pyc
+    │           │   │   │   └── templates.py
+    │           │   │   ├── completions_command.py
+    │           │   │   ├── help_command.py
+    │           │   │   ├── __init__.py
+    │           │   │   ├── list_command.py
+    │           │   │   └── __pycache__
+    │           │   │       ├── base_command.cpython-311.pyc
+    │           │   │       ├── command.cpython-311.pyc
+    │           │   │       ├── completions_command.cpython-311.pyc
+    │           │   │       ├── help_command.cpython-311.pyc
+    │           │   │       ├── __init__.cpython-311.pyc
+    │           │   │       └── list_command.cpython-311.pyc
+    │           │   ├── _compat.py
+    │           │   ├── cursor.py
+    │           │   ├── descriptors
+    │           │   │   ├── application_description.py
+    │           │   │   ├── descriptor.py
+    │           │   │   ├── __init__.py
+    │           │   │   ├── __pycache__
+    │           │   │   │   ├── application_description.cpython-311.pyc
+    │           │   │   │   ├── descriptor.cpython-311.pyc
+    │           │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   └── text_descriptor.cpython-311.pyc
+    │           │   │   └── text_descriptor.py
+    │           │   ├── events
+    │           │   │   ├── console_command_event.py
+    │           │   │   ├── console_error_event.py
+    │           │   │   ├── console_event.py
+    │           │   │   ├── console_events.py
+    │           │   │   ├── console_signal_event.py
+    │           │   │   ├── console_terminate_event.py
+    │           │   │   ├── event_dispatcher.py
+    │           │   │   ├── event.py
+    │           │   │   ├── __init__.py
+    │           │   │   └── __pycache__
+    │           │   │       ├── console_command_event.cpython-311.pyc
+    │           │   │       ├── console_error_event.cpython-311.pyc
+    │           │   │       ├── console_event.cpython-311.pyc
+    │           │   │       ├── console_events.cpython-311.pyc
+    │           │   │       ├── console_signal_event.cpython-311.pyc
+    │           │   │       ├── console_terminate_event.cpython-311.pyc
+    │           │   │       ├── event.cpython-311.pyc
+    │           │   │       ├── event_dispatcher.cpython-311.pyc
+    │           │   │       └── __init__.cpython-311.pyc
+    │           │   ├── exceptions
+    │           │   │   ├── __init__.py
+    │           │   │   └── __pycache__
+    │           │   │       └── __init__.cpython-311.pyc
+    │           │   ├── formatters
+    │           │   │   ├── formatter.py
+    │           │   │   ├── __init__.py
+    │           │   │   ├── __pycache__
+    │           │   │   │   ├── formatter.cpython-311.pyc
+    │           │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   ├── style.cpython-311.pyc
+    │           │   │   │   └── style_stack.cpython-311.pyc
+    │           │   │   ├── style.py
+    │           │   │   └── style_stack.py
+    │           │   ├── helpers.py
+    │           │   ├── __init__.py
+    │           │   ├── io
+    │           │   │   ├── buffered_io.py
+    │           │   │   ├── __init__.py
+    │           │   │   ├── inputs
+    │           │   │   │   ├── argument.py
+    │           │   │   │   ├── argv_input.py
+    │           │   │   │   ├── definition.py
+    │           │   │   │   ├── __init__.py
+    │           │   │   │   ├── input.py
+    │           │   │   │   ├── option.py
+    │           │   │   │   ├── __pycache__
+    │           │   │   │   │   ├── argument.cpython-311.pyc
+    │           │   │   │   │   ├── argv_input.cpython-311.pyc
+    │           │   │   │   │   ├── definition.cpython-311.pyc
+    │           │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   ├── input.cpython-311.pyc
+    │           │   │   │   │   ├── option.cpython-311.pyc
+    │           │   │   │   │   ├── string_input.cpython-311.pyc
+    │           │   │   │   │   └── token_parser.cpython-311.pyc
+    │           │   │   │   ├── string_input.py
+    │           │   │   │   └── token_parser.py
+    │           │   │   ├── io.py
+    │           │   │   ├── null_io.py
+    │           │   │   ├── outputs
+    │           │   │   │   ├── buffered_output.py
+    │           │   │   │   ├── __init__.py
+    │           │   │   │   ├── null_output.py
+    │           │   │   │   ├── output.py
+    │           │   │   │   ├── __pycache__
+    │           │   │   │   │   ├── buffered_output.cpython-311.pyc
+    │           │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   ├── null_output.cpython-311.pyc
+    │           │   │   │   │   ├── output.cpython-311.pyc
+    │           │   │   │   │   ├── section_output.cpython-311.pyc
+    │           │   │   │   │   └── stream_output.cpython-311.pyc
+    │           │   │   │   ├── section_output.py
+    │           │   │   │   └── stream_output.py
+    │           │   │   └── __pycache__
+    │           │   │       ├── buffered_io.cpython-311.pyc
+    │           │   │       ├── __init__.cpython-311.pyc
+    │           │   │       ├── io.cpython-311.pyc
+    │           │   │       └── null_io.cpython-311.pyc
+    │           │   ├── loaders
+    │           │   │   ├── command_loader.py
+    │           │   │   ├── factory_command_loader.py
+    │           │   │   ├── __init__.py
+    │           │   │   └── __pycache__
+    │           │   │       ├── command_loader.cpython-311.pyc
+    │           │   │       ├── factory_command_loader.cpython-311.pyc
+    │           │   │       └── __init__.cpython-311.pyc
+    │           │   ├── __pycache__
+    │           │   │   ├── application.cpython-311.pyc
+    │           │   │   ├── color.cpython-311.pyc
+    │           │   │   ├── _compat.cpython-311.pyc
+    │           │   │   ├── cursor.cpython-311.pyc
+    │           │   │   ├── helpers.cpython-311.pyc
+    │           │   │   ├── __init__.cpython-311.pyc
+    │           │   │   ├── terminal.cpython-311.pyc
+    │           │   │   └── _utils.cpython-311.pyc
+    │           │   ├── py.typed
+    │           │   ├── terminal.py
+    │           │   ├── testers
+    │           │   │   ├── application_tester.py
+    │           │   │   ├── command_tester.py
+    │           │   │   ├── __init__.py
+    │           │   │   └── __pycache__
+    │           │   │       ├── application_tester.cpython-311.pyc
+    │           │   │       ├── command_tester.cpython-311.pyc
+    │           │   │       └── __init__.cpython-311.pyc
+    │           │   ├── ui
+    │           │   │   ├── choice_question.py
+    │           │   │   ├── component.py
+    │           │   │   ├── confirmation_question.py
+    │           │   │   ├── exception_trace.py
+    │           │   │   ├── __init__.py
+    │           │   │   ├── progress_bar.py
+    │           │   │   ├── progress_indicator.py
+    │           │   │   ├── __pycache__
+    │           │   │   │   ├── choice_question.cpython-311.pyc
+    │           │   │   │   ├── component.cpython-311.pyc
+    │           │   │   │   ├── confirmation_question.cpython-311.pyc
+    │           │   │   │   ├── exception_trace.cpython-311.pyc
+    │           │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   ├── progress_bar.cpython-311.pyc
+    │           │   │   │   ├── progress_indicator.cpython-311.pyc
+    │           │   │   │   ├── question.cpython-311.pyc
+    │           │   │   │   ├── table_cell.cpython-311.pyc
+    │           │   │   │   ├── table_cell_style.cpython-311.pyc
+    │           │   │   │   ├── table.cpython-311.pyc
+    │           │   │   │   ├── table_separator.cpython-311.pyc
+    │           │   │   │   ├── table_style.cpython-311.pyc
+    │           │   │   │   └── ui.cpython-311.pyc
+    │           │   │   ├── question.py
+    │           │   │   ├── table_cell.py
+    │           │   │   ├── table_cell_style.py
+    │           │   │   ├── table.py
+    │           │   │   ├── table_separator.py
+    │           │   │   ├── table_style.py
+    │           │   │   └── ui.py
+    │           │   └── _utils.py
+    │           ├── cleo-2.1.0.dist-info
+    │           │   ├── INSTALLER
+    │           │   ├── LICENSE
+    │           │   ├── METADATA
+    │           │   ├── RECORD
     │           │   └── WHEEL
     │           ├── click
     │           │   ├── _compat.py
@@ -2100,6 +2334,244 @@
     │           │   ├── LICENSE
     │           │   ├── METADATA
     │           │   ├── RECORD
+    │           │   └── WHEEL
+    │           ├── crashtest
+    │           │   ├── contracts
+    │           │   │   ├── base_solution.py
+    │           │   │   ├── has_solutions_for_exception.py
+    │           │   │   ├── __init__.py
+    │           │   │   ├── provides_solution.py
+    │           │   │   ├── __pycache__
+    │           │   │   │   ├── base_solution.cpython-311.pyc
+    │           │   │   │   ├── has_solutions_for_exception.cpython-311.pyc
+    │           │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   ├── provides_solution.cpython-311.pyc
+    │           │   │   │   ├── solution.cpython-311.pyc
+    │           │   │   │   └── solution_provider_repository.cpython-311.pyc
+    │           │   │   ├── solution_provider_repository.py
+    │           │   │   └── solution.py
+    │           │   ├── frame_collection.py
+    │           │   ├── frame.py
+    │           │   ├── __init__.py
+    │           │   ├── inspector.py
+    │           │   ├── __pycache__
+    │           │   │   ├── frame_collection.cpython-311.pyc
+    │           │   │   ├── frame.cpython-311.pyc
+    │           │   │   ├── __init__.cpython-311.pyc
+    │           │   │   └── inspector.cpython-311.pyc
+    │           │   ├── py.typed
+    │           │   └── solution_providers
+    │           │       ├── __init__.py
+    │           │       ├── __pycache__
+    │           │       │   ├── __init__.cpython-311.pyc
+    │           │       │   └── solution_provider_repository.cpython-311.pyc
+    │           │       └── solution_provider_repository.py
+    │           ├── crashtest-0.4.1.dist-info
+    │           │   ├── INSTALLER
+    │           │   ├── LICENSE
+    │           │   ├── METADATA
+    │           │   ├── RECORD
+    │           │   └── WHEEL
+    │           ├── cryptography
+    │           │   ├── __about__.py
+    │           │   ├── exceptions.py
+    │           │   ├── fernet.py
+    │           │   ├── hazmat
+    │           │   │   ├── backends
+    │           │   │   │   ├── __init__.py
+    │           │   │   │   ├── openssl
+    │           │   │   │   │   ├── aead.py
+    │           │   │   │   │   ├── backend.py
+    │           │   │   │   │   ├── ciphers.py
+    │           │   │   │   │   ├── cmac.py
+    │           │   │   │   │   ├── decode_asn1.py
+    │           │   │   │   │   ├── ec.py
+    │           │   │   │   │   ├── __init__.py
+    │           │   │   │   │   ├── __pycache__
+    │           │   │   │   │   │   ├── aead.cpython-311.pyc
+    │           │   │   │   │   │   ├── backend.cpython-311.pyc
+    │           │   │   │   │   │   ├── ciphers.cpython-311.pyc
+    │           │   │   │   │   │   ├── cmac.cpython-311.pyc
+    │           │   │   │   │   │   ├── decode_asn1.cpython-311.pyc
+    │           │   │   │   │   │   ├── ec.cpython-311.pyc
+    │           │   │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   │   ├── rsa.cpython-311.pyc
+    │           │   │   │   │   │   └── utils.cpython-311.pyc
+    │           │   │   │   │   ├── rsa.py
+    │           │   │   │   │   └── utils.py
+    │           │   │   │   └── __pycache__
+    │           │   │   │       └── __init__.cpython-311.pyc
+    │           │   │   ├── bindings
+    │           │   │   │   ├── __init__.py
+    │           │   │   │   ├── openssl
+    │           │   │   │   │   ├── binding.py
+    │           │   │   │   │   ├── _conditional.py
+    │           │   │   │   │   ├── __init__.py
+    │           │   │   │   │   └── __pycache__
+    │           │   │   │   │       ├── binding.cpython-311.pyc
+    │           │   │   │   │       ├── _conditional.cpython-311.pyc
+    │           │   │   │   │       └── __init__.cpython-311.pyc
+    │           │   │   │   ├── __pycache__
+    │           │   │   │   │   └── __init__.cpython-311.pyc
+    │           │   │   │   ├── _rust
+    │           │   │   │   │   ├── asn1.pyi
+    │           │   │   │   │   ├── exceptions.pyi
+    │           │   │   │   │   ├── __init__.pyi
+    │           │   │   │   │   ├── ocsp.pyi
+    │           │   │   │   │   ├── openssl
+    │           │   │   │   │   │   ├── dh.pyi
+    │           │   │   │   │   │   ├── dsa.pyi
+    │           │   │   │   │   │   ├── ed25519.pyi
+    │           │   │   │   │   │   ├── ed448.pyi
+    │           │   │   │   │   │   ├── hashes.pyi
+    │           │   │   │   │   │   ├── hmac.pyi
+    │           │   │   │   │   │   ├── __init__.pyi
+    │           │   │   │   │   │   ├── kdf.pyi
+    │           │   │   │   │   │   ├── poly1305.pyi
+    │           │   │   │   │   │   ├── x25519.pyi
+    │           │   │   │   │   │   └── x448.pyi
+    │           │   │   │   │   ├── _openssl.pyi
+    │           │   │   │   │   ├── pkcs7.pyi
+    │           │   │   │   │   └── x509.pyi
+    │           │   │   │   └── _rust.abi3.so
+    │           │   │   ├── __init__.py
+    │           │   │   ├── _oid.py
+    │           │   │   ├── primitives
+    │           │   │   │   ├── asymmetric
+    │           │   │   │   │   ├── dh.py
+    │           │   │   │   │   ├── dsa.py
+    │           │   │   │   │   ├── ec.py
+    │           │   │   │   │   ├── ed25519.py
+    │           │   │   │   │   ├── ed448.py
+    │           │   │   │   │   ├── __init__.py
+    │           │   │   │   │   ├── padding.py
+    │           │   │   │   │   ├── __pycache__
+    │           │   │   │   │   │   ├── dh.cpython-311.pyc
+    │           │   │   │   │   │   ├── dsa.cpython-311.pyc
+    │           │   │   │   │   │   ├── ec.cpython-311.pyc
+    │           │   │   │   │   │   ├── ed25519.cpython-311.pyc
+    │           │   │   │   │   │   ├── ed448.cpython-311.pyc
+    │           │   │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   │   ├── padding.cpython-311.pyc
+    │           │   │   │   │   │   ├── rsa.cpython-311.pyc
+    │           │   │   │   │   │   ├── types.cpython-311.pyc
+    │           │   │   │   │   │   ├── utils.cpython-311.pyc
+    │           │   │   │   │   │   ├── x25519.cpython-311.pyc
+    │           │   │   │   │   │   └── x448.cpython-311.pyc
+    │           │   │   │   │   ├── rsa.py
+    │           │   │   │   │   ├── types.py
+    │           │   │   │   │   ├── utils.py
+    │           │   │   │   │   ├── x25519.py
+    │           │   │   │   │   └── x448.py
+    │           │   │   │   ├── _asymmetric.py
+    │           │   │   │   ├── _cipheralgorithm.py
+    │           │   │   │   ├── ciphers
+    │           │   │   │   │   ├── aead.py
+    │           │   │   │   │   ├── algorithms.py
+    │           │   │   │   │   ├── base.py
+    │           │   │   │   │   ├── __init__.py
+    │           │   │   │   │   ├── modes.py
+    │           │   │   │   │   └── __pycache__
+    │           │   │   │   │       ├── aead.cpython-311.pyc
+    │           │   │   │   │       ├── algorithms.cpython-311.pyc
+    │           │   │   │   │       ├── base.cpython-311.pyc
+    │           │   │   │   │       ├── __init__.cpython-311.pyc
+    │           │   │   │   │       └── modes.cpython-311.pyc
+    │           │   │   │   ├── cmac.py
+    │           │   │   │   ├── constant_time.py
+    │           │   │   │   ├── hashes.py
+    │           │   │   │   ├── hmac.py
+    │           │   │   │   ├── __init__.py
+    │           │   │   │   ├── kdf
+    │           │   │   │   │   ├── concatkdf.py
+    │           │   │   │   │   ├── hkdf.py
+    │           │   │   │   │   ├── __init__.py
+    │           │   │   │   │   ├── kbkdf.py
+    │           │   │   │   │   ├── pbkdf2.py
+    │           │   │   │   │   ├── __pycache__
+    │           │   │   │   │   │   ├── concatkdf.cpython-311.pyc
+    │           │   │   │   │   │   ├── hkdf.cpython-311.pyc
+    │           │   │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   │   ├── kbkdf.cpython-311.pyc
+    │           │   │   │   │   │   ├── pbkdf2.cpython-311.pyc
+    │           │   │   │   │   │   ├── scrypt.cpython-311.pyc
+    │           │   │   │   │   │   └── x963kdf.cpython-311.pyc
+    │           │   │   │   │   ├── scrypt.py
+    │           │   │   │   │   └── x963kdf.py
+    │           │   │   │   ├── keywrap.py
+    │           │   │   │   ├── padding.py
+    │           │   │   │   ├── poly1305.py
+    │           │   │   │   ├── __pycache__
+    │           │   │   │   │   ├── _asymmetric.cpython-311.pyc
+    │           │   │   │   │   ├── _cipheralgorithm.cpython-311.pyc
+    │           │   │   │   │   ├── cmac.cpython-311.pyc
+    │           │   │   │   │   ├── constant_time.cpython-311.pyc
+    │           │   │   │   │   ├── hashes.cpython-311.pyc
+    │           │   │   │   │   ├── hmac.cpython-311.pyc
+    │           │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   ├── keywrap.cpython-311.pyc
+    │           │   │   │   │   ├── padding.cpython-311.pyc
+    │           │   │   │   │   ├── poly1305.cpython-311.pyc
+    │           │   │   │   │   └── _serialization.cpython-311.pyc
+    │           │   │   │   ├── serialization
+    │           │   │   │   │   ├── base.py
+    │           │   │   │   │   ├── __init__.py
+    │           │   │   │   │   ├── pkcs12.py
+    │           │   │   │   │   ├── pkcs7.py
+    │           │   │   │   │   ├── __pycache__
+    │           │   │   │   │   │   ├── base.cpython-311.pyc
+    │           │   │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   │   ├── pkcs12.cpython-311.pyc
+    │           │   │   │   │   │   ├── pkcs7.cpython-311.pyc
+    │           │   │   │   │   │   └── ssh.cpython-311.pyc
+    │           │   │   │   │   └── ssh.py
+    │           │   │   │   ├── _serialization.py
+    │           │   │   │   └── twofactor
+    │           │   │   │       ├── hotp.py
+    │           │   │   │       ├── __init__.py
+    │           │   │   │       ├── __pycache__
+    │           │   │   │       │   ├── hotp.cpython-311.pyc
+    │           │   │   │       │   ├── __init__.cpython-311.pyc
+    │           │   │   │       │   └── totp.cpython-311.pyc
+    │           │   │   │       └── totp.py
+    │           │   │   └── __pycache__
+    │           │   │       ├── __init__.cpython-311.pyc
+    │           │   │       └── _oid.cpython-311.pyc
+    │           │   ├── __init__.py
+    │           │   ├── __pycache__
+    │           │   │   ├── __about__.cpython-311.pyc
+    │           │   │   ├── exceptions.cpython-311.pyc
+    │           │   │   ├── fernet.cpython-311.pyc
+    │           │   │   ├── __init__.cpython-311.pyc
+    │           │   │   └── utils.cpython-311.pyc
+    │           │   ├── py.typed
+    │           │   ├── utils.py
+    │           │   └── x509
+    │           │       ├── base.py
+    │           │       ├── certificate_transparency.py
+    │           │       ├── extensions.py
+    │           │       ├── general_name.py
+    │           │       ├── __init__.py
+    │           │       ├── name.py
+    │           │       ├── ocsp.py
+    │           │       ├── oid.py
+    │           │       └── __pycache__
+    │           │           ├── base.cpython-311.pyc
+    │           │           ├── certificate_transparency.cpython-311.pyc
+    │           │           ├── extensions.cpython-311.pyc
+    │           │           ├── general_name.cpython-311.pyc
+    │           │           ├── __init__.cpython-311.pyc
+    │           │           ├── name.cpython-311.pyc
+    │           │           ├── ocsp.cpython-311.pyc
+    │           │           └── oid.cpython-311.pyc
+    │           ├── cryptography-41.0.7.dist-info
+    │           │   ├── INSTALLER
+    │           │   ├── LICENSE
+    │           │   ├── LICENSE.APACHE
+    │           │   ├── LICENSE.BSD
+    │           │   ├── METADATA
+    │           │   ├── RECORD
+    │           │   ├── top_level.txt
     │           │   └── WHEEL
     │           ├── cycler
     │           │   ├── __init__.py
@@ -3916,9 +4388,240 @@
     │           │   │   ├── custom.css
     │           │   │   ├── konami.js
     │           │   │   └── pipenv.png
-    │           │   └── _templates
-    │           │       ├── hacks.html
-    │           │       └── sidebarlogo.html
+    │           │   ├── _templates
+    │           │   │   ├── hacks.html
+    │           │   │   └── sidebarlogo.html
+    │           │   └── tutorial
+    │           │       ├── conclusion.txt
+    │           │       ├── encoding.txt
+    │           │       ├── file-format.txt
+    │           │       ├── index.txt
+    │           │       ├── introduction.txt
+    │           │       ├── object-store.txt
+    │           │       ├── porcelain.txt
+    │           │       ├── remote.txt
+    │           │       ├── repo.txt
+    │           │       └── tag.txt
+    │           ├── dulwich
+    │           │   ├── archive.py
+    │           │   ├── bundle.py
+    │           │   ├── client.py
+    │           │   ├── cli.py
+    │           │   ├── cloud
+    │           │   │   ├── gcs.py
+    │           │   │   ├── __init__.py
+    │           │   │   └── __pycache__
+    │           │   │       ├── gcs.cpython-311.pyc
+    │           │   │       └── __init__.cpython-311.pyc
+    │           │   ├── config.py
+    │           │   ├── contrib
+    │           │   │   ├── diffstat.py
+    │           │   │   ├── __init__.py
+    │           │   │   ├── paramiko_vendor.py
+    │           │   │   ├── __pycache__
+    │           │   │   │   ├── diffstat.cpython-311.pyc
+    │           │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   ├── paramiko_vendor.cpython-311.pyc
+    │           │   │   │   ├── release_robot.cpython-311.pyc
+    │           │   │   │   ├── requests_vendor.cpython-311.pyc
+    │           │   │   │   ├── swift.cpython-311.pyc
+    │           │   │   │   ├── test_paramiko_vendor.cpython-311.pyc
+    │           │   │   │   ├── test_release_robot.cpython-311.pyc
+    │           │   │   │   ├── test_swift.cpython-311.pyc
+    │           │   │   │   └── test_swift_smoke.cpython-311.pyc
+    │           │   │   ├── release_robot.py
+    │           │   │   ├── requests_vendor.py
+    │           │   │   ├── swift.py
+    │           │   │   ├── test_paramiko_vendor.py
+    │           │   │   ├── test_release_robot.py
+    │           │   │   ├── test_swift.py
+    │           │   │   └── test_swift_smoke.py
+    │           │   ├── credentials.py
+    │           │   ├── _diff_tree.c
+    │           │   ├── _diff_tree.cpython-311-x86_64-linux-gnu.so
+    │           │   ├── diff_tree.py
+    │           │   ├── errors.py
+    │           │   ├── fastexport.py
+    │           │   ├── file.py
+    │           │   ├── graph.py
+    │           │   ├── greenthreads.py
+    │           │   ├── hooks.py
+    │           │   ├── ignore.py
+    │           │   ├── index.py
+    │           │   ├── __init__.py
+    │           │   ├── lfs.py
+    │           │   ├── line_ending.py
+    │           │   ├── log_utils.py
+    │           │   ├── lru_cache.py
+    │           │   ├── mailmap.py
+    │           │   ├── __main__.py
+    │           │   ├── _objects.c
+    │           │   ├── _objects.cpython-311-x86_64-linux-gnu.so
+    │           │   ├── objectspec.py
+    │           │   ├── objects.py
+    │           │   ├── object_store.py
+    │           │   ├── _pack.c
+    │           │   ├── _pack.cpython-311-x86_64-linux-gnu.so
+    │           │   ├── pack.py
+    │           │   ├── patch.py
+    │           │   ├── porcelain.py
+    │           │   ├── protocol.py
+    │           │   ├── __pycache__
+    │           │   │   ├── archive.cpython-311.pyc
+    │           │   │   ├── bundle.cpython-311.pyc
+    │           │   │   ├── cli.cpython-311.pyc
+    │           │   │   ├── client.cpython-311.pyc
+    │           │   │   ├── config.cpython-311.pyc
+    │           │   │   ├── credentials.cpython-311.pyc
+    │           │   │   ├── diff_tree.cpython-311.pyc
+    │           │   │   ├── errors.cpython-311.pyc
+    │           │   │   ├── fastexport.cpython-311.pyc
+    │           │   │   ├── file.cpython-311.pyc
+    │           │   │   ├── graph.cpython-311.pyc
+    │           │   │   ├── greenthreads.cpython-311.pyc
+    │           │   │   ├── hooks.cpython-311.pyc
+    │           │   │   ├── ignore.cpython-311.pyc
+    │           │   │   ├── index.cpython-311.pyc
+    │           │   │   ├── __init__.cpython-311.pyc
+    │           │   │   ├── lfs.cpython-311.pyc
+    │           │   │   ├── line_ending.cpython-311.pyc
+    │           │   │   ├── log_utils.cpython-311.pyc
+    │           │   │   ├── lru_cache.cpython-311.pyc
+    │           │   │   ├── mailmap.cpython-311.pyc
+    │           │   │   ├── __main__.cpython-311.pyc
+    │           │   │   ├── objects.cpython-311.pyc
+    │           │   │   ├── objectspec.cpython-311.pyc
+    │           │   │   ├── object_store.cpython-311.pyc
+    │           │   │   ├── pack.cpython-311.pyc
+    │           │   │   ├── patch.cpython-311.pyc
+    │           │   │   ├── porcelain.cpython-311.pyc
+    │           │   │   ├── protocol.cpython-311.pyc
+    │           │   │   ├── reflog.cpython-311.pyc
+    │           │   │   ├── refs.cpython-311.pyc
+    │           │   │   ├── repo.cpython-311.pyc
+    │           │   │   ├── server.cpython-311.pyc
+    │           │   │   ├── stash.cpython-311.pyc
+    │           │   │   ├── submodule.cpython-311.pyc
+    │           │   │   ├── walk.cpython-311.pyc
+    │           │   │   └── web.cpython-311.pyc
+    │           │   ├── py.typed
+    │           │   ├── reflog.py
+    │           │   ├── refs.py
+    │           │   ├── repo.py
+    │           │   ├── server.py
+    │           │   ├── stash.py
+    │           │   ├── stdint.h
+    │           │   ├── submodule.py
+    │           │   ├── tests
+    │           │   │   ├── compat
+    │           │   │   │   ├── __init__.py
+    │           │   │   │   ├── __pycache__
+    │           │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   ├── server_utils.cpython-311.pyc
+    │           │   │   │   │   ├── test_client.cpython-311.pyc
+    │           │   │   │   │   ├── test_pack.cpython-311.pyc
+    │           │   │   │   │   ├── test_patch.cpython-311.pyc
+    │           │   │   │   │   ├── test_porcelain.cpython-311.pyc
+    │           │   │   │   │   ├── test_repository.cpython-311.pyc
+    │           │   │   │   │   ├── test_server.cpython-311.pyc
+    │           │   │   │   │   ├── test_utils.cpython-311.pyc
+    │           │   │   │   │   ├── test_web.cpython-311.pyc
+    │           │   │   │   │   └── utils.cpython-311.pyc
+    │           │   │   │   ├── server_utils.py
+    │           │   │   │   ├── test_client.py
+    │           │   │   │   ├── test_pack.py
+    │           │   │   │   ├── test_patch.py
+    │           │   │   │   ├── test_porcelain.py
+    │           │   │   │   ├── test_repository.py
+    │           │   │   │   ├── test_server.py
+    │           │   │   │   ├── test_utils.py
+    │           │   │   │   ├── test_web.py
+    │           │   │   │   └── utils.py
+    │           │   │   ├── __init__.py
+    │           │   │   ├── __pycache__
+    │           │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   ├── test_archive.cpython-311.pyc
+    │           │   │   │   ├── test_blackbox.cpython-311.pyc
+    │           │   │   │   ├── test_bundle.cpython-311.pyc
+    │           │   │   │   ├── test_client.cpython-311.pyc
+    │           │   │   │   ├── test_config.cpython-311.pyc
+    │           │   │   │   ├── test_credentials.cpython-311.pyc
+    │           │   │   │   ├── test_diff_tree.cpython-311.pyc
+    │           │   │   │   ├── test_fastexport.cpython-311.pyc
+    │           │   │   │   ├── test_file.cpython-311.pyc
+    │           │   │   │   ├── test_grafts.cpython-311.pyc
+    │           │   │   │   ├── test_graph.cpython-311.pyc
+    │           │   │   │   ├── test_greenthreads.cpython-311.pyc
+    │           │   │   │   ├── test_hooks.cpython-311.pyc
+    │           │   │   │   ├── test_ignore.cpython-311.pyc
+    │           │   │   │   ├── test_index.cpython-311.pyc
+    │           │   │   │   ├── test_lfs.cpython-311.pyc
+    │           │   │   │   ├── test_line_ending.cpython-311.pyc
+    │           │   │   │   ├── test_lru_cache.cpython-311.pyc
+    │           │   │   │   ├── test_mailmap.cpython-311.pyc
+    │           │   │   │   ├── test_missing_obj_finder.cpython-311.pyc
+    │           │   │   │   ├── test_objects.cpython-311.pyc
+    │           │   │   │   ├── test_objectspec.cpython-311.pyc
+    │           │   │   │   ├── test_object_store.cpython-311.pyc
+    │           │   │   │   ├── test_pack.cpython-311.pyc
+    │           │   │   │   ├── test_patch.cpython-311.pyc
+    │           │   │   │   ├── test_porcelain.cpython-311.pyc
+    │           │   │   │   ├── test_protocol.cpython-311.pyc
+    │           │   │   │   ├── test_reflog.cpython-311.pyc
+    │           │   │   │   ├── test_refs.cpython-311.pyc
+    │           │   │   │   ├── test_repository.cpython-311.pyc
+    │           │   │   │   ├── test_server.cpython-311.pyc
+    │           │   │   │   ├── test_stash.cpython-311.pyc
+    │           │   │   │   ├── test_utils.cpython-311.pyc
+    │           │   │   │   ├── test_walk.cpython-311.pyc
+    │           │   │   │   ├── test_web.cpython-311.pyc
+    │           │   │   │   └── utils.cpython-311.pyc
+    │           │   │   ├── test_archive.py
+    │           │   │   ├── test_blackbox.py
+    │           │   │   ├── test_bundle.py
+    │           │   │   ├── test_client.py
+    │           │   │   ├── test_config.py
+    │           │   │   ├── test_credentials.py
+    │           │   │   ├── test_diff_tree.py
+    │           │   │   ├── test_fastexport.py
+    │           │   │   ├── test_file.py
+    │           │   │   ├── test_grafts.py
+    │           │   │   ├── test_graph.py
+    │           │   │   ├── test_greenthreads.py
+    │           │   │   ├── test_hooks.py
+    │           │   │   ├── test_ignore.py
+    │           │   │   ├── test_index.py
+    │           │   │   ├── test_lfs.py
+    │           │   │   ├── test_line_ending.py
+    │           │   │   ├── test_lru_cache.py
+    │           │   │   ├── test_mailmap.py
+    │           │   │   ├── test_missing_obj_finder.py
+    │           │   │   ├── test_objectspec.py
+    │           │   │   ├── test_objects.py
+    │           │   │   ├── test_object_store.py
+    │           │   │   ├── test_pack.py
+    │           │   │   ├── test_patch.py
+    │           │   │   ├── test_porcelain.py
+    │           │   │   ├── test_protocol.py
+    │           │   │   ├── test_reflog.py
+    │           │   │   ├── test_refs.py
+    │           │   │   ├── test_repository.py
+    │           │   │   ├── test_server.py
+    │           │   │   ├── test_stash.py
+    │           │   │   ├── test_utils.py
+    │           │   │   ├── test_walk.py
+    │           │   │   ├── test_web.py
+    │           │   │   └── utils.py
+    │           │   ├── walk.py
+    │           │   └── web.py
+    │           ├── dulwich-0.21.7.dist-info
+    │           │   ├── COPYING
+    │           │   ├── entry_points.txt
+    │           │   ├── INSTALLER
+    │           │   ├── METADATA
+    │           │   ├── RECORD
+    │           │   ├── top_level.txt
+    │           │   └── WHEEL
     │           ├── entrypoints-0.4.dist-info
     │           │   ├── INSTALLER
     │           │   ├── LICENSE
@@ -5589,6 +6292,45 @@
     │           │   ├── RECORD
     │           │   ├── top_level.txt
     │           │   └── WHEEL
+    │           ├── installer
+    │           │   ├── _core.py
+    │           │   ├── destinations.py
+    │           │   ├── exceptions.py
+    │           │   ├── __init__.py
+    │           │   ├── __main__.py
+    │           │   ├── __pycache__
+    │           │   │   ├── _core.cpython-311.pyc
+    │           │   │   ├── destinations.cpython-311.pyc
+    │           │   │   ├── exceptions.cpython-311.pyc
+    │           │   │   ├── __init__.cpython-311.pyc
+    │           │   │   ├── __main__.cpython-311.pyc
+    │           │   │   ├── records.cpython-311.pyc
+    │           │   │   ├── scripts.cpython-311.pyc
+    │           │   │   ├── sources.cpython-311.pyc
+    │           │   │   └── utils.cpython-311.pyc
+    │           │   ├── py.typed
+    │           │   ├── records.py
+    │           │   ├── _scripts
+    │           │   │   ├── __init__.py
+    │           │   │   ├── __pycache__
+    │           │   │   │   └── __init__.cpython-311.pyc
+    │           │   │   ├── t32.exe
+    │           │   │   ├── t64-arm.exe
+    │           │   │   ├── t64.exe
+    │           │   │   ├── t_arm.exe
+    │           │   │   ├── w32.exe
+    │           │   │   ├── w64-arm.exe
+    │           │   │   ├── w64.exe
+    │           │   │   └── w_arm.exe
+    │           │   ├── scripts.py
+    │           │   ├── sources.py
+    │           │   └── utils.py
+    │           ├── installer-0.7.0.dist-info
+    │           │   ├── INSTALLER
+    │           │   ├── LICENSE
+    │           │   ├── METADATA
+    │           │   ├── RECORD
+    │           │   └── WHEEL
     │           ├── ipykernel
     │           │   ├── comm
     │           │   │   ├── comm.py
@@ -6508,6 +7250,24 @@
     │           ├── itsdangerous-2.1.2.dist-info
     │           │   ├── INSTALLER
     │           │   ├── LICENSE.rst
+    │           │   ├── METADATA
+    │           │   ├── RECORD
+    │           │   ├── top_level.txt
+    │           │   └── WHEEL
+    │           ├── jaraco
+    │           │   └── classes
+    │           │       ├── ancestry.py
+    │           │       ├── __init__.py
+    │           │       ├── meta.py
+    │           │       ├── properties.py
+    │           │       └── __pycache__
+    │           │           ├── ancestry.cpython-311.pyc
+    │           │           ├── __init__.cpython-311.pyc
+    │           │           ├── meta.cpython-311.pyc
+    │           │           └── properties.cpython-311.pyc
+    │           ├── jaraco.classes-3.3.0.dist-info
+    │           │   ├── INSTALLER
+    │           │   ├── LICENSE
     │           │   ├── METADATA
     │           │   ├── RECORD
     │           │   ├── top_level.txt
@@ -8741,6 +9501,81 @@
     │           │   ├── RECORD
     │           │   ├── top_level.txt
     │           │   └── WHEEL
+    │           ├── jeepney
+    │           │   ├── auth.py
+    │           │   ├── bindgen.py
+    │           │   ├── bus_messages.py
+    │           │   ├── bus.py
+    │           │   ├── fds.py
+    │           │   ├── __init__.py
+    │           │   ├── io
+    │           │   │   ├── asyncio.py
+    │           │   │   ├── blocking.py
+    │           │   │   ├── common.py
+    │           │   │   ├── __init__.py
+    │           │   │   ├── __pycache__
+    │           │   │   │   ├── asyncio.cpython-311.pyc
+    │           │   │   │   ├── blocking.cpython-311.pyc
+    │           │   │   │   ├── common.cpython-311.pyc
+    │           │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   ├── threading.cpython-311.pyc
+    │           │   │   │   └── trio.cpython-311.pyc
+    │           │   │   ├── tests
+    │           │   │   │   ├── conftest.py
+    │           │   │   │   ├── __init__.py
+    │           │   │   │   ├── __pycache__
+    │           │   │   │   │   ├── conftest.cpython-311.pyc
+    │           │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   ├── test_asyncio.cpython-311.pyc
+    │           │   │   │   │   ├── test_blocking.cpython-311.pyc
+    │           │   │   │   │   ├── test_threading.cpython-311.pyc
+    │           │   │   │   │   ├── test_trio.cpython-311.pyc
+    │           │   │   │   │   └── utils.cpython-311.pyc
+    │           │   │   │   ├── test_asyncio.py
+    │           │   │   │   ├── test_blocking.py
+    │           │   │   │   ├── test_threading.py
+    │           │   │   │   ├── test_trio.py
+    │           │   │   │   └── utils.py
+    │           │   │   ├── threading.py
+    │           │   │   └── trio.py
+    │           │   ├── low_level.py
+    │           │   ├── __pycache__
+    │           │   │   ├── auth.cpython-311.pyc
+    │           │   │   ├── bindgen.cpython-311.pyc
+    │           │   │   ├── bus.cpython-311.pyc
+    │           │   │   ├── bus_messages.cpython-311.pyc
+    │           │   │   ├── fds.cpython-311.pyc
+    │           │   │   ├── __init__.cpython-311.pyc
+    │           │   │   ├── low_level.cpython-311.pyc
+    │           │   │   ├── routing.cpython-311.pyc
+    │           │   │   └── wrappers.cpython-311.pyc
+    │           │   ├── routing.py
+    │           │   ├── tests
+    │           │   │   ├── __init__.py
+    │           │   │   ├── __pycache__
+    │           │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   ├── test_auth.cpython-311.pyc
+    │           │   │   │   ├── test_bindgen.cpython-311.pyc
+    │           │   │   │   ├── test_bus.cpython-311.pyc
+    │           │   │   │   ├── test_bus_messages.cpython-311.pyc
+    │           │   │   │   ├── test_fds.cpython-311.pyc
+    │           │   │   │   ├── test_low_level.cpython-311.pyc
+    │           │   │   │   └── test_routing.cpython-311.pyc
+    │           │   │   ├── secrets_introspect.xml
+    │           │   │   ├── test_auth.py
+    │           │   │   ├── test_bindgen.py
+    │           │   │   ├── test_bus_messages.py
+    │           │   │   ├── test_bus.py
+    │           │   │   ├── test_fds.py
+    │           │   │   ├── test_low_level.py
+    │           │   │   └── test_routing.py
+    │           │   └── wrappers.py
+    │           ├── jeepney-0.8.0.dist-info
+    │           │   ├── INSTALLER
+    │           │   ├── LICENSE
+    │           │   ├── METADATA
+    │           │   ├── RECORD
+    │           │   └── WHEEL
     │           ├── jinja2
     │           │   ├── async_utils.py
     │           │   ├── bccache.py
@@ -10536,6 +11371,83 @@
     │           │   ├── types.py
     │           │   ├── utils.py
     │           │   └── warnings.py
+    │           ├── keyring
+    │           │   ├── backend_complete.bash
+    │           │   ├── backend_complete.zsh
+    │           │   ├── backend.py
+    │           │   ├── backends
+    │           │   │   ├── chainer.py
+    │           │   │   ├── fail.py
+    │           │   │   ├── __init__.py
+    │           │   │   ├── kwallet.py
+    │           │   │   ├── libsecret.py
+    │           │   │   ├── macOS
+    │           │   │   │   ├── api.py
+    │           │   │   │   ├── __init__.py
+    │           │   │   │   └── __pycache__
+    │           │   │   │       ├── api.cpython-311.pyc
+    │           │   │   │       └── __init__.cpython-311.pyc
+    │           │   │   ├── null.py
+    │           │   │   ├── __pycache__
+    │           │   │   │   ├── chainer.cpython-311.pyc
+    │           │   │   │   ├── fail.cpython-311.pyc
+    │           │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   ├── kwallet.cpython-311.pyc
+    │           │   │   │   ├── libsecret.cpython-311.pyc
+    │           │   │   │   ├── null.cpython-311.pyc
+    │           │   │   │   ├── SecretService.cpython-311.pyc
+    │           │   │   │   └── Windows.cpython-311.pyc
+    │           │   │   ├── SecretService.py
+    │           │   │   └── Windows.py
+    │           │   ├── cli.py
+    │           │   ├── _compat.py
+    │           │   ├── completion.py
+    │           │   ├── core.py
+    │           │   ├── credentials.py
+    │           │   ├── devpi_client.py
+    │           │   ├── errors.py
+    │           │   ├── http.py
+    │           │   ├── __init__.py
+    │           │   ├── __main__.py
+    │           │   ├── _properties_compat.py
+    │           │   ├── py312compat.py
+    │           │   ├── __pycache__
+    │           │   │   ├── backend.cpython-311.pyc
+    │           │   │   ├── cli.cpython-311.pyc
+    │           │   │   ├── _compat.cpython-311.pyc
+    │           │   │   ├── completion.cpython-311.pyc
+    │           │   │   ├── core.cpython-311.pyc
+    │           │   │   ├── credentials.cpython-311.pyc
+    │           │   │   ├── devpi_client.cpython-311.pyc
+    │           │   │   ├── errors.cpython-311.pyc
+    │           │   │   ├── http.cpython-311.pyc
+    │           │   │   ├── __init__.cpython-311.pyc
+    │           │   │   ├── __main__.cpython-311.pyc
+    │           │   │   ├── _properties_compat.cpython-311.pyc
+    │           │   │   └── py312compat.cpython-311.pyc
+    │           │   ├── py.typed
+    │           │   ├── testing
+    │           │   │   ├── backend.py
+    │           │   │   ├── __init__.py
+    │           │   │   ├── __pycache__
+    │           │   │   │   ├── backend.cpython-311.pyc
+    │           │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   └── util.cpython-311.pyc
+    │           │   │   └── util.py
+    │           │   └── util
+    │           │       ├── __init__.py
+    │           │       ├── platform_.py
+    │           │       └── __pycache__
+    │           │           ├── __init__.cpython-311.pyc
+    │           │           └── platform_.cpython-311.pyc
+    │           ├── keyring-24.3.0.dist-info
+    │           │   ├── entry_points.txt
+    │           │   ├── INSTALLER
+    │           │   ├── LICENSE
+    │           │   ├── METADATA
+    │           │   ├── RECORD
+    │           │   ├── top_level.txt
+    │           │   └── WHEEL
     │           ├── kiwisolver
     │           │   ├── _cext.cpython-311-x86_64-linux-gnu.so
     │           │   ├── _cext.pyi
@@ -13083,6 +13995,24 @@
     │           │   ├── REQUESTED
     │           │   ├── top_level.txt
     │           │   └── WHEEL
+    │           ├── more_itertools
+    │           │   ├── __init__.py
+    │           │   ├── __init__.pyi
+    │           │   ├── more.py
+    │           │   ├── more.pyi
+    │           │   ├── __pycache__
+    │           │   │   ├── __init__.cpython-311.pyc
+    │           │   │   ├── more.cpython-311.pyc
+    │           │   │   └── recipes.cpython-311.pyc
+    │           │   ├── py.typed
+    │           │   ├── recipes.py
+    │           │   └── recipes.pyi
+    │           ├── more_itertools-10.1.0.dist-info
+    │           │   ├── INSTALLER
+    │           │   ├── LICENSE
+    │           │   ├── METADATA
+    │           │   ├── RECORD
+    │           │   └── WHEEL
     │           ├── mpl_toolkits
     │           │   ├── axes_grid1
     │           │   │   ├── anchored_artists.py
@@ -13180,6 +14110,35 @@
     │           │           ├── test_art3d.py
     │           │           ├── test_axes3d.py
     │           │           └── test_legend3d.py
+    │           ├── msgpack
+    │           │   ├── buff_converter.h
+    │           │   ├── _cmsgpack.cpp
+    │           │   ├── _cmsgpack.cpython-311-x86_64-linux-gnu.so
+    │           │   ├── _cmsgpack.pyx
+    │           │   ├── exceptions.py
+    │           │   ├── ext.py
+    │           │   ├── fallback.py
+    │           │   ├── __init__.py
+    │           │   ├── _packer.pyx
+    │           │   ├── pack.h
+    │           │   ├── pack_template.h
+    │           │   ├── __pycache__
+    │           │   │   ├── exceptions.cpython-311.pyc
+    │           │   │   ├── ext.cpython-311.pyc
+    │           │   │   ├── fallback.cpython-311.pyc
+    │           │   │   └── __init__.cpython-311.pyc
+    │           │   ├── sysdep.h
+    │           │   ├── unpack_define.h
+    │           │   ├── _unpacker.pyx
+    │           │   ├── unpack.h
+    │           │   └── unpack_template.h
+    │           ├── msgpack-1.0.7.dist-info
+    │           │   ├── COPYING
+    │           │   ├── INSTALLER
+    │           │   ├── METADATA
+    │           │   ├── RECORD
+    │           │   ├── top_level.txt
+    │           │   └── WHEEL
     │           ├── nbclient
     │           │   ├── client.py
     │           │   ├── cli.py
@@ -22586,6 +23545,69 @@
     │           │   ├── REQUESTED
     │           │   ├── top_level.txt
     │           │   └── WHEEL
+    │           ├── pkginfo
+    │           │   ├── bdist.py
+    │           │   ├── bdist.pyi
+    │           │   ├── commandline.py
+    │           │   ├── commandline.pyi
+    │           │   ├── develop.py
+    │           │   ├── develop.pyi
+    │           │   ├── distribution.py
+    │           │   ├── distribution.pyi
+    │           │   ├── index.py
+    │           │   ├── index.pyi
+    │           │   ├── __init__.py
+    │           │   ├── __init__.pyi
+    │           │   ├── installed.py
+    │           │   ├── installed.pyi
+    │           │   ├── __pycache__
+    │           │   │   ├── bdist.cpython-311.pyc
+    │           │   │   ├── commandline.cpython-311.pyc
+    │           │   │   ├── develop.cpython-311.pyc
+    │           │   │   ├── distribution.cpython-311.pyc
+    │           │   │   ├── index.cpython-311.pyc
+    │           │   │   ├── __init__.cpython-311.pyc
+    │           │   │   ├── installed.cpython-311.pyc
+    │           │   │   ├── sdist.cpython-311.pyc
+    │           │   │   ├── utils.cpython-311.pyc
+    │           │   │   └── wheel.cpython-311.pyc
+    │           │   ├── py.typed
+    │           │   ├── sdist.py
+    │           │   ├── sdist.pyi
+    │           │   ├── tests
+    │           │   │   ├── __init__.py
+    │           │   │   ├── __pycache__
+    │           │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   ├── test_bdist.cpython-311.pyc
+    │           │   │   │   ├── test_commandline.cpython-311.pyc
+    │           │   │   │   ├── test_develop.cpython-311.pyc
+    │           │   │   │   ├── test_distribution.cpython-311.pyc
+    │           │   │   │   ├── test_index.cpython-311.pyc
+    │           │   │   │   ├── test_installed.cpython-311.pyc
+    │           │   │   │   ├── test_sdist.cpython-311.pyc
+    │           │   │   │   ├── test_utils.cpython-311.pyc
+    │           │   │   │   └── test_wheel.cpython-311.pyc
+    │           │   │   ├── test_bdist.py
+    │           │   │   ├── test_commandline.py
+    │           │   │   ├── test_develop.py
+    │           │   │   ├── test_distribution.py
+    │           │   │   ├── test_index.py
+    │           │   │   ├── test_installed.py
+    │           │   │   ├── test_sdist.py
+    │           │   │   ├── test_utils.py
+    │           │   │   └── test_wheel.py
+    │           │   ├── utils.py
+    │           │   ├── utils.pyi
+    │           │   ├── wheel.py
+    │           │   └── wheel.pyi
+    │           ├── pkginfo-1.9.6.dist-info
+    │           │   ├── entry_points.txt
+    │           │   ├── INSTALLER
+    │           │   ├── LICENSE.txt
+    │           │   ├── METADATA
+    │           │   ├── RECORD
+    │           │   ├── top_level.txt
+    │           │   └── WHEEL
     │           ├── pkg_resources
     │           │   ├── extern
     │           │   │   ├── __init__.py
@@ -22651,10 +23673,854 @@
     │           │   ├── unix.py
     │           │   ├── version.py
     │           │   └── windows.py
-    │           ├── platformdirs-4.0.0.dist-info
+    │           ├── platformdirs-3.11.0.dist-info
     │           │   ├── INSTALLER
     │           │   ├── licenses
     │           │   │   └── LICENSE
+    │           │   ├── METADATA
+    │           │   ├── RECORD
+    │           │   └── WHEEL
+    │           ├── poetry
+    │           │   ├── config
+    │           │   │   ├── config.py
+    │           │   │   ├── config_source.py
+    │           │   │   ├── dict_config_source.py
+    │           │   │   ├── file_config_source.py
+    │           │   │   ├── __init__.py
+    │           │   │   ├── __pycache__
+    │           │   │   │   ├── config.cpython-311.pyc
+    │           │   │   │   ├── config_source.cpython-311.pyc
+    │           │   │   │   ├── dict_config_source.cpython-311.pyc
+    │           │   │   │   ├── file_config_source.cpython-311.pyc
+    │           │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   └── source.cpython-311.pyc
+    │           │   │   └── source.py
+    │           │   ├── console
+    │           │   │   ├── application.py
+    │           │   │   ├── command_loader.py
+    │           │   │   ├── commands
+    │           │   │   │   ├── about.py
+    │           │   │   │   ├── add.py
+    │           │   │   │   ├── build.py
+    │           │   │   │   ├── cache
+    │           │   │   │   │   ├── clear.py
+    │           │   │   │   │   ├── __init__.py
+    │           │   │   │   │   ├── list.py
+    │           │   │   │   │   └── __pycache__
+    │           │   │   │   │       ├── clear.cpython-311.pyc
+    │           │   │   │   │       ├── __init__.cpython-311.pyc
+    │           │   │   │   │       └── list.cpython-311.pyc
+    │           │   │   │   ├── check.py
+    │           │   │   │   ├── command.py
+    │           │   │   │   ├── config.py
+    │           │   │   │   ├── debug
+    │           │   │   │   │   ├── info.py
+    │           │   │   │   │   ├── __init__.py
+    │           │   │   │   │   ├── __pycache__
+    │           │   │   │   │   │   ├── info.cpython-311.pyc
+    │           │   │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   │   └── resolve.cpython-311.pyc
+    │           │   │   │   │   └── resolve.py
+    │           │   │   │   ├── env
+    │           │   │   │   │   ├── info.py
+    │           │   │   │   │   ├── __init__.py
+    │           │   │   │   │   ├── list.py
+    │           │   │   │   │   ├── __pycache__
+    │           │   │   │   │   │   ├── info.cpython-311.pyc
+    │           │   │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   │   ├── list.cpython-311.pyc
+    │           │   │   │   │   │   ├── remove.cpython-311.pyc
+    │           │   │   │   │   │   └── use.cpython-311.pyc
+    │           │   │   │   │   ├── remove.py
+    │           │   │   │   │   └── use.py
+    │           │   │   │   ├── env_command.py
+    │           │   │   │   ├── export.py
+    │           │   │   │   ├── group_command.py
+    │           │   │   │   ├── __init__.py
+    │           │   │   │   ├── init.py
+    │           │   │   │   ├── installer_command.py
+    │           │   │   │   ├── install.py
+    │           │   │   │   ├── lock.py
+    │           │   │   │   ├── new.py
+    │           │   │   │   ├── publish.py
+    │           │   │   │   ├── __pycache__
+    │           │   │   │   │   ├── about.cpython-311.pyc
+    │           │   │   │   │   ├── add.cpython-311.pyc
+    │           │   │   │   │   ├── build.cpython-311.pyc
+    │           │   │   │   │   ├── check.cpython-311.pyc
+    │           │   │   │   │   ├── command.cpython-311.pyc
+    │           │   │   │   │   ├── config.cpython-311.pyc
+    │           │   │   │   │   ├── env_command.cpython-311.pyc
+    │           │   │   │   │   ├── export.cpython-311.pyc
+    │           │   │   │   │   ├── group_command.cpython-311.pyc
+    │           │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   ├── init.cpython-311.pyc
+    │           │   │   │   │   ├── install.cpython-311.pyc
+    │           │   │   │   │   ├── installer_command.cpython-311.pyc
+    │           │   │   │   │   ├── lock.cpython-311.pyc
+    │           │   │   │   │   ├── new.cpython-311.pyc
+    │           │   │   │   │   ├── publish.cpython-311.pyc
+    │           │   │   │   │   ├── remove.cpython-311.pyc
+    │           │   │   │   │   ├── run.cpython-311.pyc
+    │           │   │   │   │   ├── search.cpython-311.pyc
+    │           │   │   │   │   ├── shell.cpython-311.pyc
+    │           │   │   │   │   ├── show.cpython-311.pyc
+    │           │   │   │   │   ├── update.cpython-311.pyc
+    │           │   │   │   │   └── version.cpython-311.pyc
+    │           │   │   │   ├── remove.py
+    │           │   │   │   ├── run.py
+    │           │   │   │   ├── search.py
+    │           │   │   │   ├── self
+    │           │   │   │   │   ├── add.py
+    │           │   │   │   │   ├── __init__.py
+    │           │   │   │   │   ├── install.py
+    │           │   │   │   │   ├── lock.py
+    │           │   │   │   │   ├── __pycache__
+    │           │   │   │   │   │   ├── add.cpython-311.pyc
+    │           │   │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   │   ├── install.cpython-311.pyc
+    │           │   │   │   │   │   ├── lock.cpython-311.pyc
+    │           │   │   │   │   │   ├── remove.cpython-311.pyc
+    │           │   │   │   │   │   ├── self_command.cpython-311.pyc
+    │           │   │   │   │   │   └── update.cpython-311.pyc
+    │           │   │   │   │   ├── remove.py
+    │           │   │   │   │   ├── self_command.py
+    │           │   │   │   │   ├── show
+    │           │   │   │   │   │   ├── __init__.py
+    │           │   │   │   │   │   ├── plugins.py
+    │           │   │   │   │   │   └── __pycache__
+    │           │   │   │   │   │       ├── __init__.cpython-311.pyc
+    │           │   │   │   │   │       └── plugins.cpython-311.pyc
+    │           │   │   │   │   └── update.py
+    │           │   │   │   ├── shell.py
+    │           │   │   │   ├── show.py
+    │           │   │   │   ├── source
+    │           │   │   │   │   ├── add.py
+    │           │   │   │   │   ├── __init__.py
+    │           │   │   │   │   ├── __pycache__
+    │           │   │   │   │   │   ├── add.cpython-311.pyc
+    │           │   │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   │   ├── remove.cpython-311.pyc
+    │           │   │   │   │   │   └── show.cpython-311.pyc
+    │           │   │   │   │   ├── remove.py
+    │           │   │   │   │   └── show.py
+    │           │   │   │   ├── update.py
+    │           │   │   │   └── version.py
+    │           │   │   ├── events
+    │           │   │   │   ├── console_events.py
+    │           │   │   │   ├── __init__.py
+    │           │   │   │   └── __pycache__
+    │           │   │   │       ├── console_events.cpython-311.pyc
+    │           │   │   │       └── __init__.cpython-311.pyc
+    │           │   │   ├── exceptions.py
+    │           │   │   ├── __init__.py
+    │           │   │   ├── io
+    │           │   │   │   ├── __init__.py
+    │           │   │   │   ├── inputs
+    │           │   │   │   │   ├── __init__.py
+    │           │   │   │   │   ├── __pycache__
+    │           │   │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   │   └── run_argv_input.cpython-311.pyc
+    │           │   │   │   │   └── run_argv_input.py
+    │           │   │   │   └── __pycache__
+    │           │   │   │       └── __init__.cpython-311.pyc
+    │           │   │   ├── logging
+    │           │   │   │   ├── filters.py
+    │           │   │   │   ├── formatters
+    │           │   │   │   │   ├── builder_formatter.py
+    │           │   │   │   │   ├── formatter.py
+    │           │   │   │   │   ├── __init__.py
+    │           │   │   │   │   └── __pycache__
+    │           │   │   │   │       ├── builder_formatter.cpython-311.pyc
+    │           │   │   │   │       ├── formatter.cpython-311.pyc
+    │           │   │   │   │       └── __init__.cpython-311.pyc
+    │           │   │   │   ├── __init__.py
+    │           │   │   │   ├── io_formatter.py
+    │           │   │   │   ├── io_handler.py
+    │           │   │   │   └── __pycache__
+    │           │   │   │       ├── filters.cpython-311.pyc
+    │           │   │   │       ├── __init__.cpython-311.pyc
+    │           │   │   │       ├── io_formatter.cpython-311.pyc
+    │           │   │   │       └── io_handler.cpython-311.pyc
+    │           │   │   └── __pycache__
+    │           │   │       ├── application.cpython-311.pyc
+    │           │   │       ├── command_loader.cpython-311.pyc
+    │           │   │       ├── exceptions.cpython-311.pyc
+    │           │   │       └── __init__.cpython-311.pyc
+    │           │   ├── core
+    │           │   │   ├── constraints
+    │           │   │   │   ├── generic
+    │           │   │   │   │   ├── any_constraint.py
+    │           │   │   │   │   ├── base_constraint.py
+    │           │   │   │   │   ├── constraint.py
+    │           │   │   │   │   ├── empty_constraint.py
+    │           │   │   │   │   ├── __init__.py
+    │           │   │   │   │   ├── multi_constraint.py
+    │           │   │   │   │   ├── parser.py
+    │           │   │   │   │   ├── __pycache__
+    │           │   │   │   │   │   ├── any_constraint.cpython-311.pyc
+    │           │   │   │   │   │   ├── base_constraint.cpython-311.pyc
+    │           │   │   │   │   │   ├── constraint.cpython-311.pyc
+    │           │   │   │   │   │   ├── empty_constraint.cpython-311.pyc
+    │           │   │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   │   ├── multi_constraint.cpython-311.pyc
+    │           │   │   │   │   │   ├── parser.cpython-311.pyc
+    │           │   │   │   │   │   └── union_constraint.cpython-311.pyc
+    │           │   │   │   │   └── union_constraint.py
+    │           │   │   │   ├── __init__.py
+    │           │   │   │   ├── __pycache__
+    │           │   │   │   │   └── __init__.cpython-311.pyc
+    │           │   │   │   └── version
+    │           │   │   │       ├── empty_constraint.py
+    │           │   │   │       ├── exceptions.py
+    │           │   │   │       ├── __init__.py
+    │           │   │   │       ├── parser.py
+    │           │   │   │       ├── patterns.py
+    │           │   │   │       ├── __pycache__
+    │           │   │   │       │   ├── empty_constraint.cpython-311.pyc
+    │           │   │   │       │   ├── exceptions.cpython-311.pyc
+    │           │   │   │       │   ├── __init__.cpython-311.pyc
+    │           │   │   │       │   ├── parser.cpython-311.pyc
+    │           │   │   │       │   ├── patterns.cpython-311.pyc
+    │           │   │   │       │   ├── util.cpython-311.pyc
+    │           │   │   │       │   ├── version_constraint.cpython-311.pyc
+    │           │   │   │       │   ├── version.cpython-311.pyc
+    │           │   │   │       │   ├── version_range_constraint.cpython-311.pyc
+    │           │   │   │       │   ├── version_range.cpython-311.pyc
+    │           │   │   │       │   └── version_union.cpython-311.pyc
+    │           │   │   │       ├── util.py
+    │           │   │   │       ├── version_constraint.py
+    │           │   │   │       ├── version.py
+    │           │   │   │       ├── version_range_constraint.py
+    │           │   │   │       ├── version_range.py
+    │           │   │   │       └── version_union.py
+    │           │   │   ├── exceptions
+    │           │   │   │   ├── base.py
+    │           │   │   │   ├── __init__.py
+    │           │   │   │   └── __pycache__
+    │           │   │   │       ├── base.cpython-311.pyc
+    │           │   │   │       └── __init__.cpython-311.pyc
+    │           │   │   ├── factory.py
+    │           │   │   ├── __init__.py
+    │           │   │   ├── json
+    │           │   │   │   ├── __init__.py
+    │           │   │   │   ├── __pycache__
+    │           │   │   │   │   └── __init__.cpython-311.pyc
+    │           │   │   │   └── schemas
+    │           │   │   │       └── poetry-schema.json
+    │           │   │   ├── masonry
+    │           │   │   │   ├── api.py
+    │           │   │   │   ├── builder.py
+    │           │   │   │   ├── builders
+    │           │   │   │   │   ├── builder.py
+    │           │   │   │   │   ├── __init__.py
+    │           │   │   │   │   ├── __pycache__
+    │           │   │   │   │   │   ├── builder.cpython-311.pyc
+    │           │   │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   │   ├── sdist.cpython-311.pyc
+    │           │   │   │   │   │   └── wheel.cpython-311.pyc
+    │           │   │   │   │   ├── sdist.py
+    │           │   │   │   │   └── wheel.py
+    │           │   │   │   ├── __init__.py
+    │           │   │   │   ├── metadata.py
+    │           │   │   │   ├── __pycache__
+    │           │   │   │   │   ├── api.cpython-311.pyc
+    │           │   │   │   │   ├── builder.cpython-311.pyc
+    │           │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   └── metadata.cpython-311.pyc
+    │           │   │   │   └── utils
+    │           │   │   │       ├── helpers.py
+    │           │   │   │       ├── include.py
+    │           │   │   │       ├── __init__.py
+    │           │   │   │       ├── module.py
+    │           │   │   │       ├── package_include.py
+    │           │   │   │       └── __pycache__
+    │           │   │   │           ├── helpers.cpython-311.pyc
+    │           │   │   │           ├── include.cpython-311.pyc
+    │           │   │   │           ├── __init__.cpython-311.pyc
+    │           │   │   │           ├── module.cpython-311.pyc
+    │           │   │   │           └── package_include.cpython-311.pyc
+    │           │   │   ├── packages
+    │           │   │   │   ├── dependency_group.py
+    │           │   │   │   ├── dependency.py
+    │           │   │   │   ├── directory_dependency.py
+    │           │   │   │   ├── file_dependency.py
+    │           │   │   │   ├── __init__.py
+    │           │   │   │   ├── package.py
+    │           │   │   │   ├── path_dependency.py
+    │           │   │   │   ├── project_package.py
+    │           │   │   │   ├── __pycache__
+    │           │   │   │   │   ├── dependency.cpython-311.pyc
+    │           │   │   │   │   ├── dependency_group.cpython-311.pyc
+    │           │   │   │   │   ├── directory_dependency.cpython-311.pyc
+    │           │   │   │   │   ├── file_dependency.cpython-311.pyc
+    │           │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   ├── package.cpython-311.pyc
+    │           │   │   │   │   ├── path_dependency.cpython-311.pyc
+    │           │   │   │   │   ├── project_package.cpython-311.pyc
+    │           │   │   │   │   ├── specification.cpython-311.pyc
+    │           │   │   │   │   ├── url_dependency.cpython-311.pyc
+    │           │   │   │   │   └── vcs_dependency.cpython-311.pyc
+    │           │   │   │   ├── specification.py
+    │           │   │   │   ├── url_dependency.py
+    │           │   │   │   ├── utils
+    │           │   │   │   │   ├── __init__.py
+    │           │   │   │   │   ├── link.py
+    │           │   │   │   │   ├── __pycache__
+    │           │   │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   │   ├── link.cpython-311.pyc
+    │           │   │   │   │   │   └── utils.cpython-311.pyc
+    │           │   │   │   │   └── utils.py
+    │           │   │   │   └── vcs_dependency.py
+    │           │   │   ├── poetry.py
+    │           │   │   ├── __pycache__
+    │           │   │   │   ├── factory.cpython-311.pyc
+    │           │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   └── poetry.cpython-311.pyc
+    │           │   │   ├── pyproject
+    │           │   │   │   ├── exceptions.py
+    │           │   │   │   ├── __init__.py
+    │           │   │   │   ├── __pycache__
+    │           │   │   │   │   ├── exceptions.cpython-311.pyc
+    │           │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   ├── tables.cpython-311.pyc
+    │           │   │   │   │   └── toml.cpython-311.pyc
+    │           │   │   │   ├── tables.py
+    │           │   │   │   └── toml.py
+    │           │   │   ├── py.typed
+    │           │   │   ├── spdx
+    │           │   │   │   ├── data
+    │           │   │   │   │   └── licenses.json
+    │           │   │   │   ├── helpers.py
+    │           │   │   │   ├── __init__.py
+    │           │   │   │   ├── license.py
+    │           │   │   │   ├── __pycache__
+    │           │   │   │   │   ├── helpers.cpython-311.pyc
+    │           │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   ├── license.cpython-311.pyc
+    │           │   │   │   │   └── updater.cpython-311.pyc
+    │           │   │   │   └── updater.py
+    │           │   │   ├── utils
+    │           │   │   │   ├── _compat.py
+    │           │   │   │   ├── helpers.py
+    │           │   │   │   ├── __init__.py
+    │           │   │   │   ├── patterns.py
+    │           │   │   │   └── __pycache__
+    │           │   │   │       ├── _compat.cpython-311.pyc
+    │           │   │   │       ├── helpers.cpython-311.pyc
+    │           │   │   │       ├── __init__.cpython-311.pyc
+    │           │   │   │       └── patterns.cpython-311.pyc
+    │           │   │   ├── vcs
+    │           │   │   │   ├── git.py
+    │           │   │   │   ├── __init__.py
+    │           │   │   │   └── __pycache__
+    │           │   │   │       ├── git.cpython-311.pyc
+    │           │   │   │       └── __init__.cpython-311.pyc
+    │           │   │   ├── _vendor
+    │           │   │   │   ├── fastjsonschema
+    │           │   │   │   │   ├── draft04.py
+    │           │   │   │   │   ├── draft06.py
+    │           │   │   │   │   ├── draft07.py
+    │           │   │   │   │   ├── exceptions.py
+    │           │   │   │   │   ├── generator.py
+    │           │   │   │   │   ├── indent.py
+    │           │   │   │   │   ├── __init__.py
+    │           │   │   │   │   ├── LICENSE
+    │           │   │   │   │   ├── __main__.py
+    │           │   │   │   │   ├── __pycache__
+    │           │   │   │   │   │   ├── draft04.cpython-311.pyc
+    │           │   │   │   │   │   ├── draft06.cpython-311.pyc
+    │           │   │   │   │   │   ├── draft07.cpython-311.pyc
+    │           │   │   │   │   │   ├── exceptions.cpython-311.pyc
+    │           │   │   │   │   │   ├── generator.cpython-311.pyc
+    │           │   │   │   │   │   ├── indent.cpython-311.pyc
+    │           │   │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   │   ├── __main__.cpython-311.pyc
+    │           │   │   │   │   │   ├── ref_resolver.cpython-311.pyc
+    │           │   │   │   │   │   └── version.cpython-311.pyc
+    │           │   │   │   │   ├── ref_resolver.py
+    │           │   │   │   │   └── version.py
+    │           │   │   │   ├── lark
+    │           │   │   │   │   ├── ast_utils.py
+    │           │   │   │   │   ├── common.py
+    │           │   │   │   │   ├── exceptions.py
+    │           │   │   │   │   ├── grammar.py
+    │           │   │   │   │   ├── grammars
+    │           │   │   │   │   │   ├── common.lark
+    │           │   │   │   │   │   ├── __init__.py
+    │           │   │   │   │   │   ├── lark.lark
+    │           │   │   │   │   │   ├── __pycache__
+    │           │   │   │   │   │   │   └── __init__.cpython-311.pyc
+    │           │   │   │   │   │   ├── python.lark
+    │           │   │   │   │   │   └── unicode.lark
+    │           │   │   │   │   ├── indenter.py
+    │           │   │   │   │   ├── __init__.py
+    │           │   │   │   │   ├── lark.py
+    │           │   │   │   │   ├── lexer.py
+    │           │   │   │   │   ├── LICENSE
+    │           │   │   │   │   ├── load_grammar.py
+    │           │   │   │   │   ├── parser_frontends.py
+    │           │   │   │   │   ├── parsers
+    │           │   │   │   │   │   ├── cyk.py
+    │           │   │   │   │   │   ├── earley_common.py
+    │           │   │   │   │   │   ├── earley_forest.py
+    │           │   │   │   │   │   ├── earley.py
+    │           │   │   │   │   │   ├── grammar_analysis.py
+    │           │   │   │   │   │   ├── __init__.py
+    │           │   │   │   │   │   ├── lalr_analysis.py
+    │           │   │   │   │   │   ├── lalr_interactive_parser.py
+    │           │   │   │   │   │   ├── lalr_parser.py
+    │           │   │   │   │   │   ├── lalr_parser_state.py
+    │           │   │   │   │   │   ├── __pycache__
+    │           │   │   │   │   │   │   ├── cyk.cpython-311.pyc
+    │           │   │   │   │   │   │   ├── earley_common.cpython-311.pyc
+    │           │   │   │   │   │   │   ├── earley.cpython-311.pyc
+    │           │   │   │   │   │   │   ├── earley_forest.cpython-311.pyc
+    │           │   │   │   │   │   │   ├── grammar_analysis.cpython-311.pyc
+    │           │   │   │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   │   │   ├── lalr_analysis.cpython-311.pyc
+    │           │   │   │   │   │   │   ├── lalr_interactive_parser.cpython-311.pyc
+    │           │   │   │   │   │   │   ├── lalr_parser.cpython-311.pyc
+    │           │   │   │   │   │   │   ├── lalr_parser_state.cpython-311.pyc
+    │           │   │   │   │   │   │   └── xearley.cpython-311.pyc
+    │           │   │   │   │   │   └── xearley.py
+    │           │   │   │   │   ├── parse_tree_builder.py
+    │           │   │   │   │   ├── __pycache__
+    │           │   │   │   │   │   ├── ast_utils.cpython-311.pyc
+    │           │   │   │   │   │   ├── common.cpython-311.pyc
+    │           │   │   │   │   │   ├── exceptions.cpython-311.pyc
+    │           │   │   │   │   │   ├── grammar.cpython-311.pyc
+    │           │   │   │   │   │   ├── indenter.cpython-311.pyc
+    │           │   │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   │   ├── lark.cpython-311.pyc
+    │           │   │   │   │   │   ├── lexer.cpython-311.pyc
+    │           │   │   │   │   │   ├── load_grammar.cpython-311.pyc
+    │           │   │   │   │   │   ├── parser_frontends.cpython-311.pyc
+    │           │   │   │   │   │   ├── parse_tree_builder.cpython-311.pyc
+    │           │   │   │   │   │   ├── reconstruct.cpython-311.pyc
+    │           │   │   │   │   │   ├── tree.cpython-311.pyc
+    │           │   │   │   │   │   ├── tree_matcher.cpython-311.pyc
+    │           │   │   │   │   │   ├── tree_templates.cpython-311.pyc
+    │           │   │   │   │   │   ├── utils.cpython-311.pyc
+    │           │   │   │   │   │   └── visitors.cpython-311.pyc
+    │           │   │   │   │   ├── __pyinstaller
+    │           │   │   │   │   │   ├── hook-lark.py
+    │           │   │   │   │   │   ├── __init__.py
+    │           │   │   │   │   │   └── __pycache__
+    │           │   │   │   │   │       ├── hook-lark.cpython-311.pyc
+    │           │   │   │   │   │       └── __init__.cpython-311.pyc
+    │           │   │   │   │   ├── py.typed
+    │           │   │   │   │   ├── reconstruct.py
+    │           │   │   │   │   ├── tools
+    │           │   │   │   │   │   ├── __init__.py
+    │           │   │   │   │   │   ├── nearley.py
+    │           │   │   │   │   │   ├── __pycache__
+    │           │   │   │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   │   │   ├── nearley.cpython-311.pyc
+    │           │   │   │   │   │   │   ├── serialize.cpython-311.pyc
+    │           │   │   │   │   │   │   └── standalone.cpython-311.pyc
+    │           │   │   │   │   │   ├── serialize.py
+    │           │   │   │   │   │   └── standalone.py
+    │           │   │   │   │   ├── tree_matcher.py
+    │           │   │   │   │   ├── tree.py
+    │           │   │   │   │   ├── tree_templates.py
+    │           │   │   │   │   ├── utils.py
+    │           │   │   │   │   └── visitors.py
+    │           │   │   │   ├── packaging
+    │           │   │   │   │   ├── _elffile.py
+    │           │   │   │   │   ├── __init__.py
+    │           │   │   │   │   ├── LICENSE
+    │           │   │   │   │   ├── LICENSE.APACHE
+    │           │   │   │   │   ├── LICENSE.BSD
+    │           │   │   │   │   ├── _manylinux.py
+    │           │   │   │   │   ├── markers.py
+    │           │   │   │   │   ├── metadata.py
+    │           │   │   │   │   ├── _musllinux.py
+    │           │   │   │   │   ├── _parser.py
+    │           │   │   │   │   ├── __pycache__
+    │           │   │   │   │   │   ├── _elffile.cpython-311.pyc
+    │           │   │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   │   ├── _manylinux.cpython-311.pyc
+    │           │   │   │   │   │   ├── markers.cpython-311.pyc
+    │           │   │   │   │   │   ├── metadata.cpython-311.pyc
+    │           │   │   │   │   │   ├── _musllinux.cpython-311.pyc
+    │           │   │   │   │   │   ├── _parser.cpython-311.pyc
+    │           │   │   │   │   │   ├── requirements.cpython-311.pyc
+    │           │   │   │   │   │   ├── specifiers.cpython-311.pyc
+    │           │   │   │   │   │   ├── _structures.cpython-311.pyc
+    │           │   │   │   │   │   ├── tags.cpython-311.pyc
+    │           │   │   │   │   │   ├── _tokenizer.cpython-311.pyc
+    │           │   │   │   │   │   ├── utils.cpython-311.pyc
+    │           │   │   │   │   │   └── version.cpython-311.pyc
+    │           │   │   │   │   ├── py.typed
+    │           │   │   │   │   ├── requirements.py
+    │           │   │   │   │   ├── specifiers.py
+    │           │   │   │   │   ├── _structures.py
+    │           │   │   │   │   ├── tags.py
+    │           │   │   │   │   ├── _tokenizer.py
+    │           │   │   │   │   ├── utils.py
+    │           │   │   │   │   └── version.py
+    │           │   │   │   ├── tomli
+    │           │   │   │   │   ├── __init__.py
+    │           │   │   │   │   ├── LICENSE
+    │           │   │   │   │   ├── _parser.py
+    │           │   │   │   │   ├── __pycache__
+    │           │   │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   │   ├── _parser.cpython-311.pyc
+    │           │   │   │   │   │   ├── _re.cpython-311.pyc
+    │           │   │   │   │   │   └── _types.cpython-311.pyc
+    │           │   │   │   │   ├── py.typed
+    │           │   │   │   │   ├── _re.py
+    │           │   │   │   │   └── _types.py
+    │           │   │   │   └── vendor.txt
+    │           │   │   └── version
+    │           │   │       ├── exceptions.py
+    │           │   │       ├── grammars
+    │           │   │       │   ├── __init__.py
+    │           │   │       │   ├── markers.lark
+    │           │   │       │   ├── pep508.lark
+    │           │   │       │   └── __pycache__
+    │           │   │       │       └── __init__.cpython-311.pyc
+    │           │   │       ├── helpers.py
+    │           │   │       ├── __init__.py
+    │           │   │       ├── markers.py
+    │           │   │       ├── parser.py
+    │           │   │       ├── pep440
+    │           │   │       │   ├── __init__.py
+    │           │   │       │   ├── parser.py
+    │           │   │       │   ├── __pycache__
+    │           │   │       │   │   ├── __init__.cpython-311.pyc
+    │           │   │       │   │   ├── parser.cpython-311.pyc
+    │           │   │       │   │   ├── segments.cpython-311.pyc
+    │           │   │       │   │   └── version.cpython-311.pyc
+    │           │   │       │   ├── segments.py
+    │           │   │       │   └── version.py
+    │           │   │       ├── __pycache__
+    │           │   │       │   ├── exceptions.cpython-311.pyc
+    │           │   │       │   ├── helpers.cpython-311.pyc
+    │           │   │       │   ├── __init__.cpython-311.pyc
+    │           │   │       │   ├── markers.cpython-311.pyc
+    │           │   │       │   ├── parser.cpython-311.pyc
+    │           │   │       │   └── requirements.cpython-311.pyc
+    │           │   │       └── requirements.py
+    │           │   ├── exceptions.py
+    │           │   ├── factory.py
+    │           │   ├── inspection
+    │           │   │   ├── info.py
+    │           │   │   ├── __init__.py
+    │           │   │   └── __pycache__
+    │           │   │       ├── info.cpython-311.pyc
+    │           │   │       └── __init__.cpython-311.pyc
+    │           │   ├── installation
+    │           │   │   ├── chef.py
+    │           │   │   ├── chooser.py
+    │           │   │   ├── executor.py
+    │           │   │   ├── __init__.py
+    │           │   │   ├── installer.py
+    │           │   │   ├── operations
+    │           │   │   │   ├── __init__.py
+    │           │   │   │   ├── install.py
+    │           │   │   │   ├── operation.py
+    │           │   │   │   ├── __pycache__
+    │           │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   ├── install.cpython-311.pyc
+    │           │   │   │   │   ├── operation.cpython-311.pyc
+    │           │   │   │   │   ├── uninstall.cpython-311.pyc
+    │           │   │   │   │   └── update.cpython-311.pyc
+    │           │   │   │   ├── uninstall.py
+    │           │   │   │   └── update.py
+    │           │   │   ├── __pycache__
+    │           │   │   │   ├── chef.cpython-311.pyc
+    │           │   │   │   ├── chooser.cpython-311.pyc
+    │           │   │   │   ├── executor.cpython-311.pyc
+    │           │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   ├── installer.cpython-311.pyc
+    │           │   │   │   └── wheel_installer.cpython-311.pyc
+    │           │   │   └── wheel_installer.py
+    │           │   ├── json
+    │           │   │   ├── __init__.py
+    │           │   │   ├── __pycache__
+    │           │   │   │   └── __init__.cpython-311.pyc
+    │           │   │   └── schemas
+    │           │   │       └── poetry.json
+    │           │   ├── layouts
+    │           │   │   ├── __init__.py
+    │           │   │   ├── layout.py
+    │           │   │   ├── __pycache__
+    │           │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   ├── layout.cpython-311.pyc
+    │           │   │   │   ├── src.cpython-311.pyc
+    │           │   │   │   └── standard.cpython-311.pyc
+    │           │   │   ├── src.py
+    │           │   │   └── standard.py
+    │           │   ├── locations.py
+    │           │   ├── __main__.py
+    │           │   ├── masonry
+    │           │   │   ├── api.py
+    │           │   │   ├── builders
+    │           │   │   │   ├── editable.py
+    │           │   │   │   ├── __init__.py
+    │           │   │   │   └── __pycache__
+    │           │   │   │       ├── editable.cpython-311.pyc
+    │           │   │   │       └── __init__.cpython-311.pyc
+    │           │   │   ├── __init__.py
+    │           │   │   └── __pycache__
+    │           │   │       ├── api.cpython-311.pyc
+    │           │   │       └── __init__.cpython-311.pyc
+    │           │   ├── mixology
+    │           │   │   ├── assignment.py
+    │           │   │   ├── failure.py
+    │           │   │   ├── incompatibility_cause.py
+    │           │   │   ├── incompatibility.py
+    │           │   │   ├── __init__.py
+    │           │   │   ├── partial_solution.py
+    │           │   │   ├── __pycache__
+    │           │   │   │   ├── assignment.cpython-311.pyc
+    │           │   │   │   ├── failure.cpython-311.pyc
+    │           │   │   │   ├── incompatibility_cause.cpython-311.pyc
+    │           │   │   │   ├── incompatibility.cpython-311.pyc
+    │           │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   ├── partial_solution.cpython-311.pyc
+    │           │   │   │   ├── result.cpython-311.pyc
+    │           │   │   │   ├── set_relation.cpython-311.pyc
+    │           │   │   │   ├── term.cpython-311.pyc
+    │           │   │   │   └── version_solver.cpython-311.pyc
+    │           │   │   ├── result.py
+    │           │   │   ├── set_relation.py
+    │           │   │   ├── solutions
+    │           │   │   │   ├── __init__.py
+    │           │   │   │   ├── providers
+    │           │   │   │   │   ├── __init__.py
+    │           │   │   │   │   ├── __pycache__
+    │           │   │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   │   └── python_requirement_solution_provider.cpython-311.pyc
+    │           │   │   │   │   └── python_requirement_solution_provider.py
+    │           │   │   │   ├── __pycache__
+    │           │   │   │   │   └── __init__.cpython-311.pyc
+    │           │   │   │   └── solutions
+    │           │   │   │       ├── __init__.py
+    │           │   │   │       ├── __pycache__
+    │           │   │   │       │   ├── __init__.cpython-311.pyc
+    │           │   │   │       │   └── python_requirement_solution.cpython-311.pyc
+    │           │   │   │       └── python_requirement_solution.py
+    │           │   │   ├── term.py
+    │           │   │   └── version_solver.py
+    │           │   ├── packages
+    │           │   │   ├── dependency_package.py
+    │           │   │   ├── direct_origin.py
+    │           │   │   ├── __init__.py
+    │           │   │   ├── locker.py
+    │           │   │   ├── package_collection.py
+    │           │   │   └── __pycache__
+    │           │   │       ├── dependency_package.cpython-311.pyc
+    │           │   │       ├── direct_origin.cpython-311.pyc
+    │           │   │       ├── __init__.cpython-311.pyc
+    │           │   │       ├── locker.cpython-311.pyc
+    │           │   │       └── package_collection.cpython-311.pyc
+    │           │   ├── plugins
+    │           │   │   ├── application_plugin.py
+    │           │   │   ├── base_plugin.py
+    │           │   │   ├── __init__.py
+    │           │   │   ├── plugin_manager.py
+    │           │   │   ├── plugin.py
+    │           │   │   └── __pycache__
+    │           │   │       ├── application_plugin.cpython-311.pyc
+    │           │   │       ├── base_plugin.cpython-311.pyc
+    │           │   │       ├── __init__.cpython-311.pyc
+    │           │   │       ├── plugin.cpython-311.pyc
+    │           │   │       └── plugin_manager.cpython-311.pyc
+    │           │   ├── poetry.py
+    │           │   ├── publishing
+    │           │   │   ├── __init__.py
+    │           │   │   ├── publisher.py
+    │           │   │   ├── __pycache__
+    │           │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   ├── publisher.cpython-311.pyc
+    │           │   │   │   └── uploader.cpython-311.pyc
+    │           │   │   └── uploader.py
+    │           │   ├── puzzle
+    │           │   │   ├── exceptions.py
+    │           │   │   ├── __init__.py
+    │           │   │   ├── provider.py
+    │           │   │   ├── __pycache__
+    │           │   │   │   ├── exceptions.cpython-311.pyc
+    │           │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   ├── provider.cpython-311.pyc
+    │           │   │   │   ├── solver.cpython-311.pyc
+    │           │   │   │   └── transaction.cpython-311.pyc
+    │           │   │   ├── solver.py
+    │           │   │   └── transaction.py
+    │           │   ├── __pycache__
+    │           │   │   ├── exceptions.cpython-311.pyc
+    │           │   │   ├── factory.cpython-311.pyc
+    │           │   │   ├── locations.cpython-311.pyc
+    │           │   │   ├── __main__.cpython-311.pyc
+    │           │   │   ├── poetry.cpython-311.pyc
+    │           │   │   └── __version__.cpython-311.pyc
+    │           │   ├── pyproject
+    │           │   │   ├── __init__.py
+    │           │   │   ├── __pycache__
+    │           │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   └── toml.cpython-311.pyc
+    │           │   │   └── toml.py
+    │           │   ├── py.typed
+    │           │   ├── repositories
+    │           │   │   ├── abstract_repository.py
+    │           │   │   ├── cached_repository.py
+    │           │   │   ├── exceptions.py
+    │           │   │   ├── http_repository.py
+    │           │   │   ├── __init__.py
+    │           │   │   ├── installed_repository.py
+    │           │   │   ├── legacy_repository.py
+    │           │   │   ├── link_sources
+    │           │   │   │   ├── base.py
+    │           │   │   │   ├── html.py
+    │           │   │   │   ├── __init__.py
+    │           │   │   │   ├── json.py
+    │           │   │   │   └── __pycache__
+    │           │   │   │       ├── base.cpython-311.pyc
+    │           │   │   │       ├── html.cpython-311.pyc
+    │           │   │   │       ├── __init__.cpython-311.pyc
+    │           │   │   │       └── json.cpython-311.pyc
+    │           │   │   ├── lockfile_repository.py
+    │           │   │   ├── parsers
+    │           │   │   │   ├── html_page_parser.py
+    │           │   │   │   ├── __init__.py
+    │           │   │   │   ├── __pycache__
+    │           │   │   │   │   ├── html_page_parser.cpython-311.pyc
+    │           │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   └── pypi_search_parser.cpython-311.pyc
+    │           │   │   │   └── pypi_search_parser.py
+    │           │   │   ├── __pycache__
+    │           │   │   │   ├── abstract_repository.cpython-311.pyc
+    │           │   │   │   ├── cached_repository.cpython-311.pyc
+    │           │   │   │   ├── exceptions.cpython-311.pyc
+    │           │   │   │   ├── http_repository.cpython-311.pyc
+    │           │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   ├── installed_repository.cpython-311.pyc
+    │           │   │   │   ├── legacy_repository.cpython-311.pyc
+    │           │   │   │   ├── lockfile_repository.cpython-311.pyc
+    │           │   │   │   ├── pypi_repository.cpython-311.pyc
+    │           │   │   │   ├── repository.cpython-311.pyc
+    │           │   │   │   ├── repository_pool.cpython-311.pyc
+    │           │   │   │   └── single_page_repository.cpython-311.pyc
+    │           │   │   ├── pypi_repository.py
+    │           │   │   ├── repository_pool.py
+    │           │   │   ├── repository.py
+    │           │   │   └── single_page_repository.py
+    │           │   ├── toml
+    │           │   │   ├── exceptions.py
+    │           │   │   ├── file.py
+    │           │   │   ├── __init__.py
+    │           │   │   └── __pycache__
+    │           │   │       ├── exceptions.cpython-311.pyc
+    │           │   │       ├── file.cpython-311.pyc
+    │           │   │       └── __init__.cpython-311.pyc
+    │           │   ├── utils
+    │           │   │   ├── authenticator.py
+    │           │   │   ├── cache.py
+    │           │   │   ├── _compat.py
+    │           │   │   ├── constants.py
+    │           │   │   ├── dependency_specification.py
+    │           │   │   ├── env
+    │           │   │   │   ├── base_env.py
+    │           │   │   │   ├── env_manager.py
+    │           │   │   │   ├── exceptions.py
+    │           │   │   │   ├── generic_env.py
+    │           │   │   │   ├── __init__.py
+    │           │   │   │   ├── mock_env.py
+    │           │   │   │   ├── null_env.py
+    │           │   │   │   ├── __pycache__
+    │           │   │   │   │   ├── base_env.cpython-311.pyc
+    │           │   │   │   │   ├── env_manager.cpython-311.pyc
+    │           │   │   │   │   ├── exceptions.cpython-311.pyc
+    │           │   │   │   │   ├── generic_env.cpython-311.pyc
+    │           │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   ├── mock_env.cpython-311.pyc
+    │           │   │   │   │   ├── null_env.cpython-311.pyc
+    │           │   │   │   │   ├── script_strings.cpython-311.pyc
+    │           │   │   │   │   ├── site_packages.cpython-311.pyc
+    │           │   │   │   │   ├── system_env.cpython-311.pyc
+    │           │   │   │   │   └── virtual_env.cpython-311.pyc
+    │           │   │   │   ├── script_strings.py
+    │           │   │   │   ├── site_packages.py
+    │           │   │   │   ├── system_env.py
+    │           │   │   │   └── virtual_env.py
+    │           │   │   ├── extras.py
+    │           │   │   ├── helpers.py
+    │           │   │   ├── __init__.py
+    │           │   │   ├── password_manager.py
+    │           │   │   ├── patterns.py
+    │           │   │   ├── pip.py
+    │           │   │   ├── __pycache__
+    │           │   │   │   ├── authenticator.cpython-311.pyc
+    │           │   │   │   ├── cache.cpython-311.pyc
+    │           │   │   │   ├── _compat.cpython-311.pyc
+    │           │   │   │   ├── constants.cpython-311.pyc
+    │           │   │   │   ├── dependency_specification.cpython-311.pyc
+    │           │   │   │   ├── extras.cpython-311.pyc
+    │           │   │   │   ├── helpers.cpython-311.pyc
+    │           │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   ├── password_manager.cpython-311.pyc
+    │           │   │   │   ├── patterns.cpython-311.pyc
+    │           │   │   │   ├── pip.cpython-311.pyc
+    │           │   │   │   ├── setup_reader.cpython-311.pyc
+    │           │   │   │   ├── shell.cpython-311.pyc
+    │           │   │   │   ├── source.cpython-311.pyc
+    │           │   │   │   └── wheel.cpython-311.pyc
+    │           │   │   ├── setup_reader.py
+    │           │   │   ├── shell.py
+    │           │   │   ├── source.py
+    │           │   │   └── wheel.py
+    │           │   ├── vcs
+    │           │   │   ├── git
+    │           │   │   │   ├── backend.py
+    │           │   │   │   ├── __init__.py
+    │           │   │   │   ├── __pycache__
+    │           │   │   │   │   ├── backend.cpython-311.pyc
+    │           │   │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   │   └── system.cpython-311.pyc
+    │           │   │   │   └── system.py
+    │           │   │   ├── __init__.py
+    │           │   │   └── __pycache__
+    │           │   │       └── __init__.cpython-311.pyc
+    │           │   ├── version
+    │           │   │   ├── __init__.py
+    │           │   │   ├── __pycache__
+    │           │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   └── version_selector.cpython-311.pyc
+    │           │   │   └── version_selector.py
+    │           │   └── __version__.py
+    │           ├── poetry-1.7.1.dist-info
+    │           │   ├── entry_points.txt
+    │           │   ├── INSTALLER
+    │           │   ├── LICENSE
+    │           │   ├── METADATA
+    │           │   ├── RECORD
+    │           │   ├── REQUESTED
+    │           │   └── WHEEL
+    │           ├── poetry_core-1.8.1.dist-info
+    │           │   ├── INSTALLER
+    │           │   ├── LICENSE
+    │           │   ├── METADATA
+    │           │   ├── RECORD
+    │           │   └── WHEEL
+    │           ├── poetry_plugin_export
+    │           │   ├── command.py
+    │           │   ├── exporter.py
+    │           │   ├── __init__.py
+    │           │   ├── plugins.py
+    │           │   ├── __pycache__
+    │           │   │   ├── command.cpython-311.pyc
+    │           │   │   ├── exporter.cpython-311.pyc
+    │           │   │   ├── __init__.cpython-311.pyc
+    │           │   │   ├── plugins.cpython-311.pyc
+    │           │   │   └── walker.cpython-311.pyc
+    │           │   └── walker.py
+    │           ├── poetry_plugin_export-1.6.0.dist-info
+    │           │   ├── entry_points.txt
+    │           │   ├── INSTALLER
+    │           │   ├── LICENSE
     │           │   ├── METADATA
     │           │   ├── RECORD
     │           │   └── WHEEL
@@ -24949,6 +26815,26 @@
     │           │   ├── METADATA
     │           │   ├── RECORD
     │           │   └── WHEEL
+    │           ├── pyproject_hooks
+    │           │   ├── _compat.py
+    │           │   ├── _impl.py
+    │           │   ├── __init__.py
+    │           │   ├── _in_process
+    │           │   │   ├── __init__.py
+    │           │   │   ├── _in_process.py
+    │           │   │   └── __pycache__
+    │           │   │       ├── __init__.cpython-311.pyc
+    │           │   │       └── _in_process.cpython-311.pyc
+    │           │   └── __pycache__
+    │           │       ├── _compat.cpython-311.pyc
+    │           │       ├── _impl.cpython-311.pyc
+    │           │       └── __init__.cpython-311.pyc
+    │           ├── pyproject_hooks-1.0.0.dist-info
+    │           │   ├── INSTALLER
+    │           │   ├── LICENSE
+    │           │   ├── METADATA
+    │           │   ├── RECORD
+    │           │   └── WHEEL
     │           ├── python_dateutil-2.8.2.dist-info
     │           │   ├── INSTALLER
     │           │   ├── LICENSE
@@ -26045,6 +27931,123 @@
     │           │   ├── RECORD
     │           │   ├── top_level.txt
     │           │   └── WHEEL
+    │           ├── rapidfuzz
+    │           │   ├── _common_py.py
+    │           │   ├── distance
+    │           │   │   ├── DamerauLevenshtein.py
+    │           │   │   ├── DamerauLevenshtein.pyi
+    │           │   │   ├── DamerauLevenshtein_py.py
+    │           │   │   ├── Hamming.py
+    │           │   │   ├── Hamming.pyi
+    │           │   │   ├── Hamming_py.py
+    │           │   │   ├── Indel.py
+    │           │   │   ├── Indel.pyi
+    │           │   │   ├── Indel_py.py
+    │           │   │   ├── _initialize_cpp.cpython-311-x86_64-linux-gnu.so
+    │           │   │   ├── _initialize.py
+    │           │   │   ├── _initialize.pyi
+    │           │   │   ├── _initialize_py.py
+    │           │   │   ├── __init__.py
+    │           │   │   ├── __init__.pyi
+    │           │   │   ├── Jaro.py
+    │           │   │   ├── Jaro.pyi
+    │           │   │   ├── Jaro_py.py
+    │           │   │   ├── JaroWinkler.py
+    │           │   │   ├── JaroWinkler.pyi
+    │           │   │   ├── JaroWinkler_py.py
+    │           │   │   ├── LCSseq.py
+    │           │   │   ├── LCSseq.pyi
+    │           │   │   ├── LCSseq_py.py
+    │           │   │   ├── Levenshtein.py
+    │           │   │   ├── Levenshtein.pyi
+    │           │   │   ├── Levenshtein_py.py
+    │           │   │   ├── metrics_cpp_avx2.cpython-311-x86_64-linux-gnu.so
+    │           │   │   ├── metrics_cpp.cpython-311-x86_64-linux-gnu.so
+    │           │   │   ├── metrics_cpp.pyi
+    │           │   │   ├── metrics_py.py
+    │           │   │   ├── OSA.py
+    │           │   │   ├── OSA.pyi
+    │           │   │   ├── OSA_py.py
+    │           │   │   ├── Postfix.py
+    │           │   │   ├── Postfix_py.py
+    │           │   │   ├── Prefix.py
+    │           │   │   ├── Prefix_py.py
+    │           │   │   └── __pycache__
+    │           │   │       ├── DamerauLevenshtein.cpython-311.pyc
+    │           │   │       ├── DamerauLevenshtein_py.cpython-311.pyc
+    │           │   │       ├── Hamming.cpython-311.pyc
+    │           │   │       ├── Hamming_py.cpython-311.pyc
+    │           │   │       ├── Indel.cpython-311.pyc
+    │           │   │       ├── Indel_py.cpython-311.pyc
+    │           │   │       ├── __init__.cpython-311.pyc
+    │           │   │       ├── _initialize.cpython-311.pyc
+    │           │   │       ├── _initialize_py.cpython-311.pyc
+    │           │   │       ├── Jaro.cpython-311.pyc
+    │           │   │       ├── Jaro_py.cpython-311.pyc
+    │           │   │       ├── JaroWinkler.cpython-311.pyc
+    │           │   │       ├── JaroWinkler_py.cpython-311.pyc
+    │           │   │       ├── LCSseq.cpython-311.pyc
+    │           │   │       ├── LCSseq_py.cpython-311.pyc
+    │           │   │       ├── Levenshtein.cpython-311.pyc
+    │           │   │       ├── Levenshtein_py.cpython-311.pyc
+    │           │   │       ├── metrics_py.cpython-311.pyc
+    │           │   │       ├── OSA.cpython-311.pyc
+    │           │   │       ├── OSA_py.cpython-311.pyc
+    │           │   │       ├── Postfix.cpython-311.pyc
+    │           │   │       ├── Postfix_py.cpython-311.pyc
+    │           │   │       ├── Prefix.cpython-311.pyc
+    │           │   │       └── Prefix_py.cpython-311.pyc
+    │           │   ├── _feature_detector_cpp.cpython-311-x86_64-linux-gnu.so
+    │           │   ├── _feature_detector.py
+    │           │   ├── fuzz_cpp_avx2.cpython-311-x86_64-linux-gnu.so
+    │           │   ├── fuzz_cpp.cpython-311-x86_64-linux-gnu.so
+    │           │   ├── fuzz.py
+    │           │   ├── fuzz.pyi
+    │           │   ├── fuzz_py.py
+    │           │   ├── __init__.pxd
+    │           │   ├── __init__.py
+    │           │   ├── __init__.pyi
+    │           │   ├── process_cpp_impl.cpython-311-x86_64-linux-gnu.so
+    │           │   ├── process_cpp_impl.pyi
+    │           │   ├── process_cpp.py
+    │           │   ├── process.py
+    │           │   ├── process.pyi
+    │           │   ├── process_py.py
+    │           │   ├── __pycache__
+    │           │   │   ├── _common_py.cpython-311.pyc
+    │           │   │   ├── _feature_detector.cpython-311.pyc
+    │           │   │   ├── fuzz.cpython-311.pyc
+    │           │   │   ├── fuzz_py.cpython-311.pyc
+    │           │   │   ├── __init__.cpython-311.pyc
+    │           │   │   ├── process_cpp.cpython-311.pyc
+    │           │   │   ├── process.cpython-311.pyc
+    │           │   │   ├── process_py.cpython-311.pyc
+    │           │   │   ├── _utils.cpython-311.pyc
+    │           │   │   ├── utils.cpython-311.pyc
+    │           │   │   └── utils_py.cpython-311.pyc
+    │           │   ├── __pyinstaller
+    │           │   │   ├── hook-rapidfuzz.py
+    │           │   │   ├── __init__.py
+    │           │   │   ├── __pycache__
+    │           │   │   │   ├── hook-rapidfuzz.cpython-311.pyc
+    │           │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   └── test_rapidfuzz_packaging.cpython-311.pyc
+    │           │   │   └── test_rapidfuzz_packaging.py
+    │           │   ├── py.typed
+    │           │   ├── rapidfuzz.h
+    │           │   ├── utils_cpp.cpython-311-x86_64-linux-gnu.so
+    │           │   ├── _utils.py
+    │           │   ├── utils.py
+    │           │   ├── utils.pyi
+    │           │   └── utils_py.py
+    │           ├── rapidfuzz-3.5.2.dist-info
+    │           │   ├── entry_points.txt
+    │           │   ├── INSTALLER
+    │           │   ├── LICENSE
+    │           │   ├── METADATA
+    │           │   ├── RECORD
+    │           │   ├── top_level.txt
+    │           │   └── WHEEL
     │           ├── referencing
     │           │   ├── _attrs.py
     │           │   ├── _attrs.pyi
@@ -26128,6 +28131,98 @@
     │           │   ├── METADATA
     │           │   ├── RECORD
     │           │   ├── REQUESTED
+    │           │   ├── top_level.txt
+    │           │   └── WHEEL
+    │           ├── requests_toolbelt
+    │           │   ├── adapters
+    │           │   │   ├── appengine.py
+    │           │   │   ├── fingerprint.py
+    │           │   │   ├── host_header_ssl.py
+    │           │   │   ├── __init__.py
+    │           │   │   ├── __pycache__
+    │           │   │   │   ├── appengine.cpython-311.pyc
+    │           │   │   │   ├── fingerprint.cpython-311.pyc
+    │           │   │   │   ├── host_header_ssl.cpython-311.pyc
+    │           │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   ├── socket_options.cpython-311.pyc
+    │           │   │   │   ├── source.cpython-311.pyc
+    │           │   │   │   ├── ssl.cpython-311.pyc
+    │           │   │   │   └── x509.cpython-311.pyc
+    │           │   │   ├── socket_options.py
+    │           │   │   ├── source.py
+    │           │   │   ├── ssl.py
+    │           │   │   └── x509.py
+    │           │   ├── auth
+    │           │   │   ├── _digest_auth_compat.py
+    │           │   │   ├── guess.py
+    │           │   │   ├── handler.py
+    │           │   │   ├── http_proxy_digest.py
+    │           │   │   ├── __init__.py
+    │           │   │   └── __pycache__
+    │           │   │       ├── _digest_auth_compat.cpython-311.pyc
+    │           │   │       ├── guess.cpython-311.pyc
+    │           │   │       ├── handler.cpython-311.pyc
+    │           │   │       ├── http_proxy_digest.cpython-311.pyc
+    │           │   │       └── __init__.cpython-311.pyc
+    │           │   ├── _compat.py
+    │           │   ├── cookies
+    │           │   │   ├── forgetful.py
+    │           │   │   ├── __init__.py
+    │           │   │   └── __pycache__
+    │           │   │       ├── forgetful.cpython-311.pyc
+    │           │   │       └── __init__.cpython-311.pyc
+    │           │   ├── downloadutils
+    │           │   │   ├── __init__.py
+    │           │   │   ├── __pycache__
+    │           │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   ├── stream.cpython-311.pyc
+    │           │   │   │   └── tee.cpython-311.pyc
+    │           │   │   ├── stream.py
+    │           │   │   └── tee.py
+    │           │   ├── exceptions.py
+    │           │   ├── __init__.py
+    │           │   ├── multipart
+    │           │   │   ├── decoder.py
+    │           │   │   ├── encoder.py
+    │           │   │   ├── __init__.py
+    │           │   │   └── __pycache__
+    │           │   │       ├── decoder.cpython-311.pyc
+    │           │   │       ├── encoder.cpython-311.pyc
+    │           │   │       └── __init__.cpython-311.pyc
+    │           │   ├── __pycache__
+    │           │   │   ├── _compat.cpython-311.pyc
+    │           │   │   ├── exceptions.cpython-311.pyc
+    │           │   │   ├── __init__.cpython-311.pyc
+    │           │   │   ├── sessions.cpython-311.pyc
+    │           │   │   └── streaming_iterator.cpython-311.pyc
+    │           │   ├── sessions.py
+    │           │   ├── streaming_iterator.py
+    │           │   ├── threaded
+    │           │   │   ├── __init__.py
+    │           │   │   ├── pool.py
+    │           │   │   ├── __pycache__
+    │           │   │   │   ├── __init__.cpython-311.pyc
+    │           │   │   │   ├── pool.cpython-311.pyc
+    │           │   │   │   └── thread.cpython-311.pyc
+    │           │   │   └── thread.py
+    │           │   └── utils
+    │           │       ├── deprecated.py
+    │           │       ├── dump.py
+    │           │       ├── formdata.py
+    │           │       ├── __init__.py
+    │           │       ├── __pycache__
+    │           │       │   ├── deprecated.cpython-311.pyc
+    │           │       │   ├── dump.cpython-311.pyc
+    │           │       │   ├── formdata.cpython-311.pyc
+    │           │       │   ├── __init__.cpython-311.pyc
+    │           │       │   └── user_agent.cpython-311.pyc
+    │           │       └── user_agent.py
+    │           ├── requests_toolbelt-1.0.0.dist-info
+    │           │   ├── AUTHORS.rst
+    │           │   ├── INSTALLER
+    │           │   ├── LICENSE
+    │           │   ├── METADATA
+    │           │   ├── RECORD
     │           │   ├── top_level.txt
     │           │   └── WHEEL
     │           ├── rfc3339_validator-0.1.4.dist-info
@@ -28708,6 +30803,30 @@
     │           │   ├── RECORD
     │           │   ├── REQUESTED
     │           │   └── WHEEL
+    │           ├── secretstorage
+    │           │   ├── collection.py
+    │           │   ├── defines.py
+    │           │   ├── dhcrypto.py
+    │           │   ├── exceptions.py
+    │           │   ├── __init__.py
+    │           │   ├── item.py
+    │           │   ├── __pycache__
+    │           │   │   ├── collection.cpython-311.pyc
+    │           │   │   ├── defines.cpython-311.pyc
+    │           │   │   ├── dhcrypto.cpython-311.pyc
+    │           │   │   ├── exceptions.cpython-311.pyc
+    │           │   │   ├── __init__.cpython-311.pyc
+    │           │   │   ├── item.cpython-311.pyc
+    │           │   │   └── util.cpython-311.pyc
+    │           │   ├── py.typed
+    │           │   └── util.py
+    │           ├── SecretStorage-3.3.3.dist-info
+    │           │   ├── INSTALLER
+    │           │   ├── LICENSE
+    │           │   ├── METADATA
+    │           │   ├── RECORD
+    │           │   ├── top_level.txt
+    │           │   └── WHEEL
     │           ├── self
     │           │   ├── __init__.py
     │           │   └── __pycache__
@@ -29035,6 +31154,32 @@
     │           │   ├── REQUESTED
     │           │   ├── top_level.txt
     │           │   └── WHEEL
+    │           ├── shellingham
+    │           │   ├── _core.py
+    │           │   ├── __init__.py
+    │           │   ├── nt.py
+    │           │   ├── posix
+    │           │   │   ├── _core.py
+    │           │   │   ├── __init__.py
+    │           │   │   ├── proc.py
+    │           │   │   ├── ps.py
+    │           │   │   └── __pycache__
+    │           │   │       ├── _core.cpython-311.pyc
+    │           │   │       ├── __init__.cpython-311.pyc
+    │           │   │       ├── proc.cpython-311.pyc
+    │           │   │       └── ps.cpython-311.pyc
+    │           │   └── __pycache__
+    │           │       ├── _core.cpython-311.pyc
+    │           │       ├── __init__.cpython-311.pyc
+    │           │       └── nt.cpython-311.pyc
+    │           ├── shellingham-1.5.4.dist-info
+    │           │   ├── INSTALLER
+    │           │   ├── LICENSE
+    │           │   ├── METADATA
+    │           │   ├── RECORD
+    │           │   ├── top_level.txt
+    │           │   ├── WHEEL
+    │           │   └── zip-safe
     │           ├── six-1.16.0.dist-info
     │           │   ├── INSTALLER
     │           │   ├── LICENSE
@@ -32232,6 +34377,41 @@
     │           │   ├── RECORD
     │           │   ├── top_level.txt
     │           │   └── WHEEL
+    │           ├── tomlkit
+    │           │   ├── api.py
+    │           │   ├── _compat.py
+    │           │   ├── container.py
+    │           │   ├── exceptions.py
+    │           │   ├── __init__.py
+    │           │   ├── items.py
+    │           │   ├── parser.py
+    │           │   ├── __pycache__
+    │           │   │   ├── api.cpython-311.pyc
+    │           │   │   ├── _compat.cpython-311.pyc
+    │           │   │   ├── container.cpython-311.pyc
+    │           │   │   ├── exceptions.cpython-311.pyc
+    │           │   │   ├── __init__.cpython-311.pyc
+    │           │   │   ├── items.cpython-311.pyc
+    │           │   │   ├── parser.cpython-311.pyc
+    │           │   │   ├── source.cpython-311.pyc
+    │           │   │   ├── toml_char.cpython-311.pyc
+    │           │   │   ├── toml_document.cpython-311.pyc
+    │           │   │   ├── toml_file.cpython-311.pyc
+    │           │   │   ├── _types.cpython-311.pyc
+    │           │   │   └── _utils.cpython-311.pyc
+    │           │   ├── py.typed
+    │           │   ├── source.py
+    │           │   ├── toml_char.py
+    │           │   ├── toml_document.py
+    │           │   ├── toml_file.py
+    │           │   ├── _types.py
+    │           │   └── _utils.py
+    │           ├── tomlkit-0.12.3.dist-info
+    │           │   ├── INSTALLER
+    │           │   ├── LICENSE
+    │           │   ├── METADATA
+    │           │   ├── RECORD
+    │           │   └── WHEEL
     │           ├── toolz
     │           │   ├── compatibility.py
     │           │   ├── curried
@@ -32625,6 +34805,20 @@
     │           │   │   └── LICENSE
     │           │   ├── METADATA
     │           │   ├── RECORD
+    │           │   └── WHEEL
+    │           ├── trove_classifiers
+    │           │   ├── __init__.py
+    │           │   ├── __main__.py
+    │           │   ├── __pycache__
+    │           │   │   ├── __init__.cpython-311.pyc
+    │           │   │   └── __main__.cpython-311.pyc
+    │           │   └── py.typed
+    │           ├── trove_classifiers-2023.11.29.dist-info
+    │           │   ├── INSTALLER
+    │           │   ├── LICENSE
+    │           │   ├── METADATA
+    │           │   ├── RECORD
+    │           │   ├── top_level.txt
     │           │   └── WHEEL
     │           ├── types_python_dateutil-2.8.19.14.dist-info
     │           │   ├── INSTALLER
@@ -35145,4 +37339,4 @@
                 ├── ipython.1
                 └── ttx.1
 
-3578 directories, 31567 files
+3892 directories, 33447 files
