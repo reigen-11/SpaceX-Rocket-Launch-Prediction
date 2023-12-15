@@ -2,11 +2,12 @@ import os
 import sys
 import pandas as pd
 from dataclasses import dataclass
-from src.utils.logger import logging
-from src.utils.exception import CustomExceptions
-from src.utils.data_preprocessing import preprocess_data
-from src.api import preprocessed_data_dir, raw_data_csv
+from logger import logging
+from exception import CustomExceptions
+from Data_transformation import preprocess_data
+from api import preprocessed_data_dir, raw_data_csv
 
+# print(sys.path)
 
 @dataclass
 class DataIngestionConfig:

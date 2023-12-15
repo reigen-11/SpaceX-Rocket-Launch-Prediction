@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX Launch Outcome Predictor - Result</title>
+    <link rel="stylesheet" href="static/result.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+
+<div class="container">
+    <section id="result">
+        <h2>Rocket Launch Prediction</h2>
+        <p>Launch Outcome: {{ result }}</p>
+        <p>Launch Success Probability: {{ probability[0][1] }}</p>
+        <p>Launch Failure Probability: {{ probability[0][0] }}</p>
+    </section>
+
+    <section id="chart-container">
+        <h2>Launch Outcome Probability Distribution</h2>
+        <canvas id="probability-chart"></canvas>
+    </section>
+
+    <footer>
+        <a href="/">Go Back</a>
+    </footer>
+</div>
+
+<script>
+    var successProbability = {{ probability[0][1] }};
+
+    var ctx = document.getElementById('probability-chart').getContext('2d');
+    var chart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Launch Success', 'Launch Failure'],
+            datasets: [{
+                label: 'Success',
+                data: [successProbability, 1 - successProbability],
+                backgroundColor: [
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                ],
+                borderColor: [
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(255, 99, 132, 1)',
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: 1
+                }
+            }
+        }
+    });
+</script>
+
+</body>
+</html>

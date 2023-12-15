@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX Launch Outcome Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+
+<body>
+    <header>
+        <h1>SpaceX Rocket Launch Outcome Probability Prediction</h1>
+    </header>
+    <div class="container">
+    <form id="predictionForm" action="{{ url_for('predict') }}" method="post">
+        <label for="payload_mass">PayloadMass in Kg of the Rocket Carrying:</label>
+        <input type="number" id="payload_mass" name="payload_mass" value=3000 required>
+
+        <label for="orbit">Orbit in Which Rocket will Enter</label>
+        <select id="orbit" name="orbit" required>
+            {% for option in orbit_list %}
+            <option value="{{ option }}">{{ option }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="launch_site">Launch Site</label>
+        <select id="launch_site" name="launch_site" required>
+            {% for option in launch_site_list %}
+            <option value="{{ option }}">{{ option }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="flights">Flights (Previous Flights you had, if any else 1)</label>
+        <input type="number" id="flights" name="flights" value=1 required>
+
+        <label for="grid_fins">Grid Fins</label>
+        <input type="checkbox" id="grid_fins" name="grid_fins">
+
+        <label for="reused">Reused</label>
+        <input type="checkbox" id="reused" name="reused">
+
+        <label for="legs">Legs</label>
+        <input type="checkbox" id="legs" name="legs">
+
+        <label for="landing_pad">Landing Pad:</label>
+        <select id="landing_pad" name="landing_pad" required>
+            {% for value in landing_pad_list %}
+            <option value="{{ value }}">{{ value }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="reused_count">Reused Count:</label>
+        <input type="number" id="reused_count" name="reused_count" value=3 required>
+
+        <label for="landing_location">Landing Location:</label>
+        <select id="landing_location" name="landing_location" required>
+            {% for value in landing_location_list %}
+            <option value="{{ value }}">{{ value }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="year">Year:</label>
+        <input type="number" id="year" name="year" min="2000" max="2050" value="2023" required>
+
+        <label for="month">Month:</label>
+        <input type="number" id="month" name="month" min="1" max="12" value="1" required>
+
+        <button type="submit">Predict Outcome</button>
+    </form>
+
+    <div id="result" class="success"></div>
+    <div id="spinner-text" class="spinner-text"></div>
+</div>
+
+</body>
+</html>

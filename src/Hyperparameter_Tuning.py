@@ -1,14 +1,14 @@
 import json
 import sys
 from dataclasses import dataclass
-
+import os
 import numpy as np
 import optuna
 from sklearn.model_selection import cross_val_score
 from xgboost import XGBClassifier
 import pandas as pd
-from src.utils.exception import CustomExceptions
-from src.api import transformed_data_csv, tuned_params_json
+from exception import CustomExceptions
+from api import transformed_data_csv, tuned_params_json
 
 
 def calculate_average_score(classification_reports):

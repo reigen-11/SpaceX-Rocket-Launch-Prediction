@@ -14,7 +14,7 @@ with open('/home/aditya/All Github/SpaceX/artifacts/data_encoding_object.pkl', '
 
 
 def display_rocket_animation():
-    rocket_gif_path = "booster.gif"
+    rocket_gif_path = "templates/booster.gif"
     st.image(rocket_gif_path)
 
 

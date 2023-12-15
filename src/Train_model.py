@@ -1,14 +1,14 @@
 import os
 import sys
 import pandas as pd
-from src.api import ml_models_dir, transformed_data_csv, results, tuned_params_json
-from src.utils.exception import CustomExceptions
-from src.utils.logger import logging
+from api import ml_models_dir, transformed_data_csv, results, tuned_params_json
+from exception import CustomExceptions
+from logger import logging
 from xgboost import XGBClassifier
 from sklearn.metrics import classification_report
 from dataclasses import dataclass
 import pickle
-from src.hyperparam_tuning import calculate_average_score
+from Hyperparameter_Tuning import calculate_average_score
 from sklearn.model_selection import StratifiedKFold
 import json
 

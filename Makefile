@@ -4,14 +4,20 @@ install_dependencies:
 update_requirements:
 	pipreqs . --force
 
-clean_data:
-	python src/data_clean.py
+fetch_data:
+	python src/Data_wrangling.py
 
-data_transform:
-	python src/data_transform.py
+clean_data:
+	python src/Data_cleaning.py
+
+encode_data:
+	python src/Data_transformation.py
+
+tune_hyperparams:
+	python src/Hyperparameter_Tuning.py
 
 train:
-	python src/train.py
+	python src/Train_model.py
 
 app:
 	streamlit run app.py

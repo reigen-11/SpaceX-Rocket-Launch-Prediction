@@ -1,2 +1,1 @@
-FROM ubuntu:22.04
-RUN apt update && apt install -y htop
+FROM python:3.11.7

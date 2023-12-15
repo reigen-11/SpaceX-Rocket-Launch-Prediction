@@ -1,0 +1,106 @@
+/* styles.css */
+
+body {
+    font-family: 'Algerian', sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #f4f4f4; /* Light gray background */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 50px;
+    transition: box-shadow 0.3s ease;
+    background-color: #fff; /* White container background */
+}
+
+.container:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #3498db; /* Blue header color */
+}
+
+form {
+    margin-top: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 12px;
+    margin-top: 15px;
+    color: #555; /* Dark gray label color */
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus,
+select:focus {
+    border-color: #3498db; /* Highlight border color on focus */
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #2ecc71; /* Green button color */
+    color: #fff; /* White text color */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #27ae60; /* Darker green on hover */
+}
+
+#result {
+    margin-top: 30px;
+    padding: 15px;
+    font-weight: bold;
+    background-color: #d4edda; /* Light green result background */
+    border: 1px solid #c3e6cb; /* Border color */
+    border-radius: 6px;
+    color: #155724; /* Dark green result text color */
+}
+
+.spinner-text {
+    margin-top: 30px;
+    font-style: italic;
+    color: #888; /* Dark gray spinner text color */
+}
+
+header {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 30px;
+    color: #333; /* Dark gray h2 text color */
+}
+
+button[type="submit"] {
+    margin-top: 20px; /* Adjust the value as needed */
+}
