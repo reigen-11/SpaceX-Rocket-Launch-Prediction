@@ -1,0 +1,11 @@
+version: "3.11.7"
+
+services:
+  spacex:
+    container_name: spacex
+    image: gradient/spacex
+    ports:
+      - "5000:5000"
+    build:
+      context: .
+      dockerfile: Dockerfile

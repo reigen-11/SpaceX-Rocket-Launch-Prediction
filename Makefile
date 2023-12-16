@@ -20,7 +20,8 @@ train:
 	python src/Train_model.py
 
 app:
-	streamlit run app.py
+	export FLASK_APP=app.py
+	flask run
 
 
 

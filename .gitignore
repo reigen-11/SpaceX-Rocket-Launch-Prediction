@@ -83,6 +83,7 @@ artifacts/data/
 # Mac OS-specific storage files
 .DS_Store
 api.py
+app.py
 # vim
 *.swp
 *.swo
