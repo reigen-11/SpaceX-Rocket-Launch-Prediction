@@ -65,8 +65,8 @@ UI :
 -----
 1. Home Page
 
-![](reports/index.png)
+![home](reports/index.png)
 
 2. Results
 
-![](reports/result.png)
+![results](reports/result.png)
