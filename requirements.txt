@@ -13,3 +13,4 @@ setuptools==58.1.0
 streamlit==1.29.0
 tqdm==4.65.2
 xgboost==2.0.2
+Gunicorn
