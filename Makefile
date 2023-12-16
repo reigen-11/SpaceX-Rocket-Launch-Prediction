@@ -1,3 +1,16 @@
+init:
+	@echo "Checking if virtual environment exists..."
+	@if [ ! -d "venv" ]; then \
+		echo "Creating virtual environment..."; \
+		python3 -m venv venv; \
+	fi
+	@echo "Activating virtual environment..."
+	@. venv/bin/activate; \
+	echo "Virtual environment activated."
+
+.PHONY: init
+
+
 install_dependencies:
 	pip install -r requirements.txt
 

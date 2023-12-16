@@ -1,57 +1,72 @@
-Spacex
+Spacex Rocket Launch Prediction
 ==============================
 
-A short description of the project.
+In this end-to-end machine learning project, we aim to predict the probability of success or failure for SpaceX Falcon 9 
+rocket launches using historical data scraped from the SpaceX Public API. The project encompasses various stages, 
+starting with data acquisition through web scraping. Utilizing the SpaceX Public API, we gather comprehensive 
+information on past launches, including details such as launch site, payload mass, orbit, success/failure outcomes, 
+and various other relevant features. Following data collection, the next steps involve data preprocessing, where we 
+clean, transform, and engineer features to prepare the dataset for machine learning. The core of the project lies 
+in binary classification, with the objective of training a predictive model capable of estimating the probability of 
+launch success or failure. This involves selecting an appropriate algorithm, model training, hyperparameter tuning, 
+and evaluating the model's performance using metrics such as accuracy, precision, recall. The end result is a 
+deployable machine learning model capable of providing valuable insights into the likelihood of success for future 
+SpaceX Falcon 9 launches, based on the patterns and trends observed in historical data.
 
 Project Organization
-------------
+==============================
 
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+1. Create a Python virtual environment with venv
+
+    ```
+    $ make init
+    ```
 
 
---------
+2. Install dependencies in the requirements.txt file 
+    ```
+    $ make install_dependencies
+    ```
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+3. Fetch historical data from SpaceX Public API and save it locally to disk
+    ```
+    $ make fetch_data
+    ```
+
+4. Clean and Encode Data using (also includes oversampling and transformed Datasets are stored as DataFrames in Artifacts)
+    ```
+    $ make clean_data
+    ```
+   ```
+    $ make encode_data
+    ```   
+
+5. Tune Hyperparameters using Optuna 
+    ```
+    $ make tune_hyperparams
+    ```
+
+6. Train ML model
+    ```
+    $ make train
+    ```
+
+7. Run Locally the Flask API
+    ```
+    $ make app
+   ```
+
+8. Create Docker Image using 
+    ```
+    $ make docker build -t docker_image_name .
+   ```
+
+UI : 
+-----
+1. Home Page
+
+![](reports/index.png)
+
+2. Results
+
+![](reports/result.png)
