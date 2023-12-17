@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request
 import pandas as pd
 import pickle
-from src.api import cleaned_data_csv
 
 app = Flask(__name__)
 
@@ -11,7 +10,7 @@ with open("models/xgb_model.pkl", "rb") as model_file:
 with open('artifacts/data_encoding_object.pkl', 'rb') as file:
     encoder = pickle.load(file)
 
-df = pd.read_csv(cleaned_data_csv)
+df = pd.read_csv("artifacts/data/processed/cleaned_data.csv")
 
 
 def get_dropdown_data():
