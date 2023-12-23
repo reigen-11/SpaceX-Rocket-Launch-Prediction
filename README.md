@@ -11,9 +11,9 @@ in binary classification, with the objective of training a predictive model capa
 launch success or failure. This involves selecting an appropriate algorithm, model training, hyperparameter tuning, 
 and evaluating the model's performance using metrics such as accuracy, precision, recall. The end result is a 
 deployable machine learning model capable of providing valuable insights into the likelihood of success for future 
-SpaceX Falcon 9 launches, based on the patterns and trends observed in historical data.
+SpaceX Falcon 9 launches, based on the patterns and trends observed in historical data. 
 
-Project Organization
+Project Structure
 ==============================
 
 1. Create a Python virtual environment with venv
@@ -56,17 +56,21 @@ Project Organization
     $ make app
    ```
 
-8. Create Docker Image using 
-    ```
-    $ make docker build -t docker_image_name .
+8. Docker Image you can Pull and run locally
    ```
+    $ docker pull reigen11/falcon9_image:latest
+   ```   
+   ```
+    $ docker run -p 5000:5000 reigen11/falcon9_image
+   ```   
 
-UI : 
------
-1. Home Page
 
-![home](reports/index.png)
+9. Hosted on Render via Docker Image
 
-2. Results
+      https://falcon-9.onrender.com
 
-![results](reports/result.png)
+   
+
+
+
+
